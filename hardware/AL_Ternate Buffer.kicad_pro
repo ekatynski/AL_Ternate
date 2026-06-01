@@ -240,7 +240,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "IR"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -636,7 +636,7 @@
     "meta": {
       "version": 1
     },
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "kicad-embed://Adequate_Labs_Template.kicad_wks",
     "plot_directory": "",
     "reuse_designators": true,
     "subpart_first_id": 65,
@@ -648,7 +648,7 @@
         "uuid": "741edc8a-7170-4d57-9b3b-12f5860c24f7"
       }
     ],
-    "used_designators": "U1,#FLG1-5,#PWR1-5",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

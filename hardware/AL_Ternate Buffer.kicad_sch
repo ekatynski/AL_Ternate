@@ -4,6 +4,13 @@
 	(generator_version "10.0")
 	(uuid "741edc8a-7170-4d57-9b3b-12f5860c24f7")
 	(paper "A3")
+	(title_block
+		(title "AL_Ternate DI Box")
+		(rev "IR")
+		(company "Adequate Labs")
+		(comment 1 "Ed Katynski")
+		(comment 2 "DI Box")
+	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:OPA1664D"
 			(pin_names
@@ -1603,46 +1610,46 @@
 			)
 		)
 		(pin "13"
-			(uuid "76430b35-5828-489f-b4d2-12f7df0bcd8a")
+			(uuid "76430b35-5828-489f-b4d2-12f7df0bcd8b")
 		)
 		(pin "11"
-			(uuid "53395880-c666-4dda-9e74-e83ebfe5e45c")
+			(uuid "53395880-c666-4dda-9e74-e83ebfe5e45d")
 		)
 		(pin "14"
-			(uuid "8b3f2a2c-f9de-4d6f-9638-745fcada1fc6")
+			(uuid "8b3f2a2c-f9de-4d6f-9638-745fcada1fc7")
 		)
 		(pin "6"
-			(uuid "fec2bb79-ff6f-4216-8467-85904287545f")
+			(uuid "fec2bb79-ff6f-4216-8467-859042875460")
 		)
 		(pin "12"
-			(uuid "22edc401-8140-4b42-a083-94da7dfddc60")
+			(uuid "22edc401-8140-4b42-a083-94da7dfddc61")
 		)
 		(pin "1"
-			(uuid "e1255ad0-a43a-46a4-bb0a-05a96c10f181")
+			(uuid "e1255ad0-a43a-46a4-bb0a-05a96c10f182")
 		)
 		(pin "7"
-			(uuid "a39a333c-0af2-429b-9229-7124ad139ed7")
+			(uuid "a39a333c-0af2-429b-9229-7124ad139ed8")
 		)
 		(pin "5"
-			(uuid "cb3ec3a9-6341-4613-826d-93aedd254521")
+			(uuid "cb3ec3a9-6341-4613-826d-93aedd254522")
 		)
 		(pin "4"
-			(uuid "49b1877e-d350-471a-91c9-9dd20044281c")
+			(uuid "49b1877e-d350-471a-91c9-9dd20044281d")
 		)
 		(pin "8"
-			(uuid "7fd60a79-86b7-4c14-b9d1-67941cc3a0ef")
+			(uuid "7fd60a79-86b7-4c14-b9d1-67941cc3a0f0")
 		)
 		(pin "10"
-			(uuid "77943f27-27b0-4bdc-ae89-8647243420bc")
+			(uuid "77943f27-27b0-4bdc-ae89-8647243420bd")
 		)
 		(pin "3"
-			(uuid "ffb731aa-88d7-4955-998c-22c33a254cb6")
+			(uuid "ffb731aa-88d7-4955-998c-22c33a254cb7")
 		)
 		(pin "2"
-			(uuid "a014ab8a-60f7-437f-a0dd-c84953f6ba21")
+			(uuid "a014ab8a-60f7-437f-a0dd-c84953f6ba22")
 		)
 		(pin "9"
-			(uuid "fa74eb1f-ca9d-4e20-9216-0a0d9c188fd0")
+			(uuid "fa74eb1f-ca9d-4e20-9216-0a0d9c188fd1")
 		)
 		(instances
 			(project "AL_Ternate Buffer"
@@ -1875,46 +1882,46 @@
 			)
 		)
 		(pin "13"
-			(uuid "76430b35-5828-489f-b4d2-12f7df0bcd8a")
+			(uuid "76430b35-5828-489f-b4d2-12f7df0bcd8c")
 		)
 		(pin "11"
-			(uuid "53395880-c666-4dda-9e74-e83ebfe5e45c")
+			(uuid "53395880-c666-4dda-9e74-e83ebfe5e45e")
 		)
 		(pin "14"
-			(uuid "8b3f2a2c-f9de-4d6f-9638-745fcada1fc6")
+			(uuid "8b3f2a2c-f9de-4d6f-9638-745fcada1fc8")
 		)
 		(pin "6"
-			(uuid "fec2bb79-ff6f-4216-8467-85904287545f")
+			(uuid "fec2bb79-ff6f-4216-8467-859042875461")
 		)
 		(pin "12"
-			(uuid "22edc401-8140-4b42-a083-94da7dfddc60")
+			(uuid "22edc401-8140-4b42-a083-94da7dfddc62")
 		)
 		(pin "1"
-			(uuid "e1255ad0-a43a-46a4-bb0a-05a96c10f181")
+			(uuid "e1255ad0-a43a-46a4-bb0a-05a96c10f183")
 		)
 		(pin "7"
-			(uuid "a39a333c-0af2-429b-9229-7124ad139ed7")
+			(uuid "a39a333c-0af2-429b-9229-7124ad139ed9")
 		)
 		(pin "5"
-			(uuid "cb3ec3a9-6341-4613-826d-93aedd254521")
+			(uuid "cb3ec3a9-6341-4613-826d-93aedd254523")
 		)
 		(pin "4"
-			(uuid "49b1877e-d350-471a-91c9-9dd20044281c")
+			(uuid "49b1877e-d350-471a-91c9-9dd20044281e")
 		)
 		(pin "8"
-			(uuid "7fd60a79-86b7-4c14-b9d1-67941cc3a0ef")
+			(uuid "7fd60a79-86b7-4c14-b9d1-67941cc3a0f1")
 		)
 		(pin "10"
-			(uuid "77943f27-27b0-4bdc-ae89-8647243420bc")
+			(uuid "77943f27-27b0-4bdc-ae89-8647243420be")
 		)
 		(pin "3"
-			(uuid "ffb731aa-88d7-4955-998c-22c33a254cb6")
+			(uuid "ffb731aa-88d7-4955-998c-22c33a254cb8")
 		)
 		(pin "2"
-			(uuid "a014ab8a-60f7-437f-a0dd-c84953f6ba21")
+			(uuid "a014ab8a-60f7-437f-a0dd-c84953f6ba23")
 		)
 		(pin "9"
-			(uuid "fa74eb1f-ca9d-4e20-9216-0a0d9c188fd0")
+			(uuid "fa74eb1f-ca9d-4e20-9216-0a0d9c188fd2")
 		)
 		(instances
 			(project "AL_Ternate Buffer"
@@ -2225,46 +2232,46 @@
 			)
 		)
 		(pin "13"
-			(uuid "76430b35-5828-489f-b4d2-12f7df0bcd8a")
+			(uuid "76430b35-5828-489f-b4d2-12f7df0bcd8d")
 		)
 		(pin "11"
-			(uuid "53395880-c666-4dda-9e74-e83ebfe5e45c")
+			(uuid "53395880-c666-4dda-9e74-e83ebfe5e45f")
 		)
 		(pin "14"
-			(uuid "8b3f2a2c-f9de-4d6f-9638-745fcada1fc6")
+			(uuid "8b3f2a2c-f9de-4d6f-9638-745fcada1fc9")
 		)
 		(pin "6"
-			(uuid "fec2bb79-ff6f-4216-8467-85904287545f")
+			(uuid "fec2bb79-ff6f-4216-8467-859042875462")
 		)
 		(pin "12"
-			(uuid "22edc401-8140-4b42-a083-94da7dfddc60")
+			(uuid "22edc401-8140-4b42-a083-94da7dfddc63")
 		)
 		(pin "1"
-			(uuid "e1255ad0-a43a-46a4-bb0a-05a96c10f181")
+			(uuid "e1255ad0-a43a-46a4-bb0a-05a96c10f184")
 		)
 		(pin "7"
-			(uuid "a39a333c-0af2-429b-9229-7124ad139ed7")
+			(uuid "a39a333c-0af2-429b-9229-7124ad139eda")
 		)
 		(pin "5"
-			(uuid "cb3ec3a9-6341-4613-826d-93aedd254521")
+			(uuid "cb3ec3a9-6341-4613-826d-93aedd254524")
 		)
 		(pin "4"
-			(uuid "49b1877e-d350-471a-91c9-9dd20044281c")
+			(uuid "49b1877e-d350-471a-91c9-9dd20044281f")
 		)
 		(pin "8"
-			(uuid "7fd60a79-86b7-4c14-b9d1-67941cc3a0ef")
+			(uuid "7fd60a79-86b7-4c14-b9d1-67941cc3a0f2")
 		)
 		(pin "10"
-			(uuid "77943f27-27b0-4bdc-ae89-8647243420bc")
+			(uuid "77943f27-27b0-4bdc-ae89-8647243420bf")
 		)
 		(pin "3"
-			(uuid "ffb731aa-88d7-4955-998c-22c33a254cb6")
+			(uuid "ffb731aa-88d7-4955-998c-22c33a254cb9")
 		)
 		(pin "2"
-			(uuid "a014ab8a-60f7-437f-a0dd-c84953f6ba21")
+			(uuid "a014ab8a-60f7-437f-a0dd-c84953f6ba24")
 		)
 		(pin "9"
-			(uuid "fa74eb1f-ca9d-4e20-9216-0a0d9c188fd0")
+			(uuid "fa74eb1f-ca9d-4e20-9216-0a0d9c188fd3")
 		)
 		(instances
 			(project "AL_Ternate Buffer"
@@ -2421,46 +2428,46 @@
 			)
 		)
 		(pin "13"
-			(uuid "76430b35-5828-489f-b4d2-12f7df0bcd8a")
+			(uuid "76430b35-5828-489f-b4d2-12f7df0bcd8e")
 		)
 		(pin "11"
-			(uuid "53395880-c666-4dda-9e74-e83ebfe5e45c")
+			(uuid "53395880-c666-4dda-9e74-e83ebfe5e460")
 		)
 		(pin "14"
-			(uuid "8b3f2a2c-f9de-4d6f-9638-745fcada1fc6")
+			(uuid "8b3f2a2c-f9de-4d6f-9638-745fcada1fca")
 		)
 		(pin "6"
-			(uuid "fec2bb79-ff6f-4216-8467-85904287545f")
+			(uuid "fec2bb79-ff6f-4216-8467-859042875463")
 		)
 		(pin "12"
-			(uuid "22edc401-8140-4b42-a083-94da7dfddc60")
+			(uuid "22edc401-8140-4b42-a083-94da7dfddc64")
 		)
 		(pin "1"
-			(uuid "e1255ad0-a43a-46a4-bb0a-05a96c10f181")
+			(uuid "e1255ad0-a43a-46a4-bb0a-05a96c10f185")
 		)
 		(pin "7"
-			(uuid "a39a333c-0af2-429b-9229-7124ad139ed7")
+			(uuid "a39a333c-0af2-429b-9229-7124ad139edb")
 		)
 		(pin "5"
-			(uuid "cb3ec3a9-6341-4613-826d-93aedd254521")
+			(uuid "cb3ec3a9-6341-4613-826d-93aedd254525")
 		)
 		(pin "4"
-			(uuid "49b1877e-d350-471a-91c9-9dd20044281c")
+			(uuid "49b1877e-d350-471a-91c9-9dd200442820")
 		)
 		(pin "8"
-			(uuid "7fd60a79-86b7-4c14-b9d1-67941cc3a0ef")
+			(uuid "7fd60a79-86b7-4c14-b9d1-67941cc3a0f3")
 		)
 		(pin "10"
-			(uuid "77943f27-27b0-4bdc-ae89-8647243420bc")
+			(uuid "77943f27-27b0-4bdc-ae89-8647243420c0")
 		)
 		(pin "3"
-			(uuid "ffb731aa-88d7-4955-998c-22c33a254cb6")
+			(uuid "ffb731aa-88d7-4955-998c-22c33a254cba")
 		)
 		(pin "2"
-			(uuid "a014ab8a-60f7-437f-a0dd-c84953f6ba21")
+			(uuid "a014ab8a-60f7-437f-a0dd-c84953f6ba25")
 		)
 		(pin "9"
-			(uuid "fa74eb1f-ca9d-4e20-9216-0a0d9c188fd0")
+			(uuid "fa74eb1f-ca9d-4e20-9216-0a0d9c188fd4")
 		)
 		(instances
 			(project "AL_Ternate Buffer"
@@ -2477,4 +2484,60 @@
 		)
 	)
 	(embedded_fonts no)
+	(embedded_files
+		(file
+			(name "Adequate_Labs_Template.kicad_wks")
+			(type worksheet)
+			(data |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|
+			)
+			(checksum "E5066FB8356938CA01BCA88A6F5C1556")
+		)
+	)
 )
