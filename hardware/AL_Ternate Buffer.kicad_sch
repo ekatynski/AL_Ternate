@@ -2662,193 +2662,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GNDPWR"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "GNDPWR"
-				(at 0 -3.302 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global ground"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GNDPWR_0_1"
-				(polyline
-					(pts
-						(xy -1.016 -1.27) (xy -1.27 -2.032) (xy -1.27 -2.032)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.508 -1.27) (xy -0.762 -2.032) (xy -0.762 -2.032)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy -0.254 -2.032) (xy -0.254 -2.032)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 -1.27) (xy 0.254 -2.032) (xy 0.254 -2.032)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -1.27) (xy -1.016 -1.27) (xy -1.016 -1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -1.27) (xy 0.762 -2.032) (xy 0.762 -2.032) (xy 0.762 -2.032)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GNDPWR_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:PWR_FLAG"
 			(power global)
 			(pin_numbers
@@ -3501,16 +3314,34 @@
 		(uuid "adf8a909-71e9-4a5c-9a9c-71151883123a")
 	)
 	(junction
+		(at 58.42 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae5ee189-e621-4125-b8fd-de654eb41599")
+	)
+	(junction
 		(at 223.52 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3637c5c-7439-4a63-b77c-0428495c1fc8")
 	)
 	(junction
+		(at 368.3 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b5043856-4946-4975-b393-9333f1caf7f4")
+	)
+	(junction
 		(at 368.3 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bc51742f-04f8-417f-8601-c32061cfe682")
+	)
+	(junction
+		(at 368.3 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bd25b922-bea4-4784-9c60-55e00d28dc5b")
 	)
 	(junction
 		(at 173.99 62.23)
@@ -3614,7 +3445,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 118.11) (xy 58.42 123.19)
+			(xy 58.42 115.57) (xy 58.42 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3821,6 +3652,16 @@
 			(type default)
 		)
 		(uuid "1edae781-451c-4ab0-8ad2-2a9d22dab5fc")
+	)
+	(wire
+		(pts
+			(xy 368.3 90.17) (xy 368.3 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21abed79-d841-4f6c-9cfd-7f4b19c789aa")
 	)
 	(wire
 		(pts
@@ -4814,6 +4655,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 118.11) (xy 58.42 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b00eee34-1e52-4b6b-83e2-17c382c51b3d")
+	)
+	(wire
+		(pts
 			(xy 266.7 96.52) (xy 322.58 96.52)
 		)
 		(stroke
@@ -5591,6 +5442,16 @@
 			(type default)
 		)
 		(uuid "fc4996ce-ee51-4b47-b412-58c2ea3ef773")
+	)
+	(wire
+		(pts
+			(xy 368.3 134.62) (xy 368.3 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe3ac167-3dd3-4540-b7c3-e30f27d04156")
 	)
 	(label "OUT 1 - STEREO"
 		(at 279.4 53.34 0)
@@ -6392,86 +6253,6 @@
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
 					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 368.3 134.62 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "19ecd816-cb0f-47b5-bdb0-6d0b32a8b1a1")
-		(property "Reference" "#PWR024"
-			(at 361.95 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 364.49 134.6199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 368.3 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 368.3 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 368.3 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f8b6ff58-c95b-4a2a-a0fc-41fa6bbb51a2")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -7588,8 +7369,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 393.7 25.4 0)
+		(lib_id "power:GND")
+		(at 368.3 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7598,9 +7379,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4c35f601-3685-45b0-a1ff-64bdbc36d95f")
-		(property "Reference" "#FLG05"
-			(at 393.7 23.495 0)
+		(uuid "4118ea2f-9848-460b-8a09-37cbd6a1da71")
+		(property "Reference" "#PWR038"
+			(at 368.3 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7610,8 +7391,8 @@
 				)
 			)
 		)
-		(property "Value" "PWR_FLAG"
-			(at 393.7 20.32 0)
+		(property "Value" "GND"
+			(at 368.3 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7621,7 +7402,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 393.7 25.4 0)
+			(at 368.3 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7632,7 +7413,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 393.7 25.4 0)
+			(at 368.3 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7642,8 +7423,8 @@
 				)
 			)
 		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 393.7 25.4 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 368.3 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7654,12 +7435,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2aa31f3-0510-4b6a-b5af-134849a5cba8")
+			(uuid "9a73a30f-2fb2-442a-821d-096fb3256aa0")
 		)
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#FLG05")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -7817,163 +7598,6 @@
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDPWR")
-		(at 58.42 135.89 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "512c3a7c-011f-4e40-aee5-b458defafc52")
-		(property "Reference" "#PWR02"
-			(at 58.42 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CHASSIS"
-			(at 58.293 139.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 58.42 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5dd21588-e70c-4cea-afe9-28d41daaa45e")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDPWR")
-		(at 368.3 154.94 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "52dc1f55-ef62-4f84-954c-7f00e6c268ba")
-		(property "Reference" "#PWR025"
-			(at 368.3 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CHASSIS"
-			(at 368.427 158.75 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 368.3 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 368.3 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 368.3 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c59a1e79-a14e-438b-b190-9bf18f13c4f9")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -9886,6 +9510,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 58.42 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "78068eff-f735-434a-a9e2-0119be9b514a")
+		(property "Reference" "#PWR036"
+			(at 58.42 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 58.42 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 58.42 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d4c52ee2-73b8-423e-8e1d-e8179a9c0141")
+		)
+		(instances
+			(project "AL_Ternate Buffer"
+				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 223.52 184.15 90)
 		(unit 1)
@@ -10226,86 +9928,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 368.3 90.17 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8b783328-b1e6-4b76-b9de-890120563b41")
-		(property "Reference" "#PWR022"
-			(at 361.95 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 364.49 90.1699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 368.3 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 368.3 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 368.3 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ea71c284-6707-40bc-be7f-90268d8a6291")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 152.4 38.1 90)
 		(unit 1)
@@ -10464,85 +10086,6 @@
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
 					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 58.42 115.57 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9079873c-07e1-4dc3-a21f-90ff2e99c365")
-		(property "Reference" "#PWR01"
-			(at 64.77 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 62.23 115.5699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 58.42 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e629eb69-838e-4268-977c-15068dd81fac")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -12110,8 +11653,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDPWR")
-		(at 393.7 25.4 0)
+		(lib_id "power:GND")
+		(at 368.3 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12119,9 +11662,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "cb0bb15c-a165-43d2-a593-9d46e9ba80ae")
-		(property "Reference" "#PWR027"
-			(at 393.7 30.48 0)
+		(fields_autoplaced yes)
+		(uuid "cac0f61d-536f-430c-b55f-b22128804d22")
+		(property "Reference" "#PWR037"
+			(at 368.3 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12131,8 +11675,8 @@
 				)
 			)
 		)
-		(property "Value" "CHASSIS"
-			(at 393.7 30.226 0)
+		(property "Value" "GND"
+			(at 368.3 160.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12142,7 +11686,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 393.7 26.67 0)
+			(at 368.3 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12153,7 +11697,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 393.7 26.67 0)
+			(at 368.3 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12163,8 +11707,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 393.7 25.4 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 368.3 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12175,12 +11719,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a1df408e-4281-43b1-9706-a37cb85300c5")
+			(uuid "9b6a744b-f15e-42cd-a6e1-1e75bbdf00b1")
 		)
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR027")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -12614,85 +12158,6 @@
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDPWR")
-		(at 368.3 110.49 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d53df48c-9c95-4149-a291-7eed8f47eb04")
-		(property "Reference" "#PWR023"
-			(at 368.3 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CHASSIS"
-			(at 368.427 114.3 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 368.3 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 368.3 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 368.3 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e4319fd5-4edc-451f-8ee0-13ef5bdff7f1")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR023")
 					(unit 1)
 				)
 			)
