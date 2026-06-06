@@ -7,6 +7,14 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "AL_ternate")
+		(date "2026-06-06")
+		(rev "IR")
+		(company "Adequate Labs")
+		(comment 1 "E. Katynski")
+		(comment 2 "DI Box")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -508,4 +516,60 @@
 		)
 	)
 	(embedded_fonts no)
+	(embedded_files
+		(file
+			(name "Adequate_Labs_Template.kicad_wks")
+			(type worksheet)
+			(data |KLUv/WAUG11UAJqL1BUn8JKkbagqtN6oB/h7fYCCzpe6UmMk1DBU200ksl+0vxIdkU2ENsoDyAEm
+				ASsBfEeZ5btHe967hE93dj/73l85I4lP/BVJBYYFyEY5A/SOjIqLDbpRoSF5WKRJZk3dZEWTEI1H
+				cgHh0E4RwoJW8AIgLI7hgFh4bHAwEJCKDQ0a63LCgtRAAYN1DEBIDSB0G3iA0CpICzrBgfZoF4+M
+				iuTxM+CwE0A4ACEjeUBIxHg8cTguPAhAYEQAjANPKjRENCo84tioaOCgG6QGIR4PMDI0LDYPSGgH
+				HRwOEAJAIXEEOGDPhwsYHHjgoCVQYGkdQCBCQBlQeID5QSMaQmIUOsKDBwdECHgBR1LBIpEIiIgj
+				gTguDqLCI9nAAUPJYwKR5WdhYXFIoRNPIBoV8CW/QWNDAiWefHAkFkk5LfkrDsgDxIfIBeSRVDg2
+				KCIOSETjIsn4/QBQSGS40MiwuCMjeSR3XEiOAeGgEamQeAJxaNCgcTFxinweA+KYOMXqD/FJpCLZ
+				MHEKCYk7NFRAJp5cOCIaNJJEw2JDI7lg4RGZoDg85GEhUqGBQlLBkUFRcMD9QoLx8OCAPDImKMoA
+				vCPEY0PywZFMfIND4tgw8QOgiGgkDwwHhYyNRzSSiogD4rAwcQqUl4doPDZEHB0mviGDBwoYFReP
+				DBMBRunqLm8FmVpP5Xot1+VxJUX9K8f0RFepmF3V033xCDH8mTxbSNH5KYfHbRtLqW/pqK9Qcbp0
+				XrXnd7DP8Dn1espvUdx0+/pTjW/4ZUdK+ZdP9HWH0BQujR383hkZc8Zvmd6ricdm7M2e9J2Od2Tq
+				iK5obdmXxfyjfnde6Ly0q35hDH2ho/Wz3vlVVLsqSg1d8XUpZffU2tzZeepaK4/5Uz/0M8f1Rddz
+				p7+0sba2GjNfZRufM/vpH/1h7eD7HDHTvswNY33iGReqM3SWvvnlb0LP5LS5vv1LyFeT5UjdLKv1
+				Li/9PF9zZN/00ole+to352pf9qq9W9MvfDNX5yjPCltHdGRwvwdf8ief0lMeD+Gby53z9dse+4pt
+				yb2e6zkUEk/lCR0FWEo5S6duF5/dFefe6BudKfWFeO7QrtPYlXnL35l13Fw+ui/DjhDC5y6l7Kic
+				kxsXdQq7Sjdp0l0RqiOje8ukp71cuRL3k73wU/72Ggvrs2SpzkHv9UOqDe8n2zXukvTpFq+OpXW1
+				VElnlLrqZSvkREaM2LfXvE+b7qP0xt4FsV8n0id0dRizln4Ymi9ChNxt175gOTdm2XyX8UHt2t3W
+				/fS5WM2vPfkQqzLLUrkqTX1ppsQO4RmZf9LvrK5dS3Vbd0U9nX7v2RnNo46d+Ghfij7fms5Zo7pZ
+				WrK8ID3l8uyYwnM9yniG2m5WmeF5JsNeWFlX6AbveGzfVr0pVk+k19ALlnLF2jTCryJ7pkNzZM4M
+				v5xhuEeHWN/KqFLXv73fmcyGb/V2dKGG6hcAKABQ/AAoznTqfdnz3t2wpRCf7JpH8ZRPF+SzVSb1
+				sLaLNp2+sfmGoUvl9HRXG5PMmJlHKaSyIT4mNjfu06Epd4OuvR0qqsWK0g+mRfb+ubOn8PQa2/PU
+				LCpXpS4hOrjO+1Y+Z/Q0dqMY03Ou8Yglv8kMj3CvK3/Utbu9GGRsNympwqu1mios7e0u55Npaamf
+				ssXamVNnyOekn9NOo4O+6xKRNuWz6GwrT/TsJ0bG1tp+mx1s38aEaa7Q0TKnrcz2xeX3OuOzXlVi
+				6XzNono531aJpamX+/aZ+dKmG6Oa0hc9vPharpYyV8OW0TZHpulZn16H+akJNT6bo7aamemaO7VU
+				X+bmzPmeY1/XDZe+WptvmassZHblx1yTSWYtTEobUv1M6oyttz7zSXR+AYKXqBLhiCRFoRMZSZIk
+				ywGyWDCGgUwOtO1SuEEFEmMIMqRMRESSFJSk0p4BvWkWhX8pVp6YBIvee8eoExCKL7PJzfgdwvos
+				Aw+Hm80eZETQw90qM0VAR0A3uCNL7zlcjuGRuIM1zBkFw1a580ihPe4+ga7GBtHbCuPuNmxAIo/a
+				l7LbJ9WGksx4lzp52lCNey9ubG/V96sH9AR9DSLhMgVL+DrWRGlpwCkiZDUJNIhyakHjgED7o0ZG
+				tfsuJ/iWm/vjwWqBU67sMOb6uT/8a6oNnb7sOkkmCuKJwuxmnDQB9XkfsXwz6L14FyLHOQAs57Y1
+				+UG73SPyOZrRlmxtdTCdMw9ApPN1RlzZGuJWEStBt8p501kO76ANWHJ9QDjbifExtp6TIxEZWoso
+				DR7F3BohIKMkeyks/jKePlEVc2TsRQXVeXvClr4LOW98L7aQksCdIQUwOGxB8olWr4QCJeRKzLvT
+				zZHICgm/2g8UDzv6N81Hh4KxnCkyHJ5Zwi/iqwrfrkuwx7wUlBFnAkEpd0unevWvg53vqLFFKX4f
+				7D/xL1KfBTmFfj0FqhylWV4Tz8Y5xdgHPeJ8mQbED5rWl+o1LoDdVmM+rhZ25j5YF29YtyCliMmm
+				XKqoq1psLb6ah+hdjmoZOwhK6cUxML7h2tzZqtgm5l8YKUz/+WgSb9KJK8RFmv0sX6hHzU/6og6y
+				tF1qZJrYK/Mofh/12u+PoBNCqaTk95vgiHzrE8qxOleHryoTA2wWSpZt5eiuGUdpoqiDkpavOZw7
+				znxP74jwhCDeze63HhqbZPndFGySXOIt5SVBlMJg5j3LCFYLwfHauWZQwjCFBAAiMip3K98wTjBO
+				NSywYu4cGkBjfQqlNC8vhq2mmUR4TgcoeOMvLjWX2yu4aquq/b34ZarAeoQYHZ4uHJwd1dSM1mG4
+				zmusyzpO/gFYfx3uPp+tXNympgC26iMRHNQYTP8UFYqxOBnSUd+gzgqmSEsnq/9PleOs2YQcPssw
+				38QvUMMBc+7go5Vi2/8HIJc0ylsOLepqQcwXuzLEGOmjo+BSRB4CWj+sfYR+mihC/HMY3FeVqTiO
+				Z3sEBTAAO6SM5HacRwrT3sdJHkOIPwdaFeoMTyv8OryajO9koTeHcXYq8TeVPGV311skVqBEDO2D
+				AoNFX+i/EI41hd64UYFC4m/5LXRRED5Q+5OMFReAUx2awb/IohQe4x0v4w0BSXYSBIBSuswtDM9B
+				Y4IPqUXHUYEEptLrqe8+og1uo6IsAjYJ2ySgbu4shx1p9xg/Iki4TK8Ldr6f6fHRSsB+2D0GVgzh
+				cxRPrIPT77KGBLMG6IkuhB3iUXObi1gyPPiU97w3JZiSVw6yIH+UCa3pzbEo5pKTKBgZhauBF9Cc
+				dJckQOYd+1gfFhxTCN59zqmk8NkIBOdVhvLspRghov03E3WV0wjHfqdnFsAbi1xgSKqsy2c84QBQ
+				D1vA7GpWPgPa0l+uFR2pvmza2/CPVUXvsK838CiE5/ngK4WvqWC+EalhWqzGuhitFB14XWH/V6Af
+				QYVXwPMW1KTpPQDKzOtBkXACzBms8TOzOG1DfXePa309fwP/7GssD2z4HduSVsAtnuzUUobkVNgd
+				xIgZSUq+ZvjZG9FoAdOqk5Tl5Nmg07YsURHKUUPVOe6/A8SJD2fphCv7nRqrNz0rR6eaasiO1h7x
+				sHqHiQ9SvSapMRWeS5EZCVGGebwf8nK7b7RNiGgB|
+			)
+			(checksum "E5066FB8356938CA01BCA88A6F5C1556")
+		)
+	)
 )
