@@ -420,7 +420,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Barrel_Jack_MountingPin"
+		(symbol "Connector:Barrel_Jack_Switch"
 			(pin_names
 				(hide yes)
 			)
@@ -439,15 +439,14 @@
 					)
 				)
 			)
-			(property "Value" "Barrel_Jack_MountingPin"
-				(at 1.27 -6.35 0)
+			(property "Value" "Barrel_Jack_Switch"
+				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -472,7 +471,7 @@
 					)
 				)
 			)
-			(property "Description" "DC Barrel Jack with a mounting pin"
+			(property "Description" "DC Barrel Jack with an internal switch"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -505,7 +504,7 @@
 					)
 				)
 			)
-			(symbol "Barrel_Jack_MountingPin_0_1"
+			(symbol "Barrel_Jack_Switch_0_1"
 				(rectangle
 					(start -5.08 3.81)
 					(end 5.08 -3.81)
@@ -553,6 +552,18 @@
 						(type outline)
 					)
 				)
+				(polyline
+					(pts
+						(xy 1.27 -2.286) (xy 1.905 -1.651)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
 					(start 3.683 3.175)
 					(end -3.302 1.905)
@@ -576,28 +587,20 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "Barrel_Jack_MountingPin_1_1"
 				(polyline
 					(pts
-						(xy -1.016 -4.572) (xy 1.016 -4.572)
+						(xy 5.08 0) (xy 1.27 0) (xy 1.27 -2.286) (xy 0.635 -1.651)
 					)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(text "Mounting"
-					(at 0 -4.191 0)
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
+			)
+			(symbol "Barrel_Jack_Switch_1_1"
 				(pin passive line
 					(at 7.62 2.54 180)
 					(length 2.54)
@@ -635,16 +638,16 @@
 					)
 				)
 				(pin passive line
-					(at 0 -7.62 90)
-					(length 3.048)
-					(name "MountPin"
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "MP"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2218,6 +2221,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_SPDT"
 			(pin_names
 				(offset 0)
@@ -2967,7 +3093,7 @@
 	)
 	(rectangle
 		(start 177.8 228.6)
-		(end 224.79 266.7)
+		(end 231.14 266.7)
 		(stroke
 			(width 0.127)
 			(type dot)
@@ -3075,7 +3201,7 @@
 	)
 	(text "OP AMP SUPPLY AND DECOUPLING"
 		(exclude_from_sim no)
-		(at 201.676 227.584 0)
+		(at 204.724 227.584 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3158,10 +3284,10 @@
 		(uuid "0ecd2447-2d2f-4302-ba43-c2faf9b3181a")
 	)
 	(junction
-		(at 185.42 238.76)
+		(at 387.35 234.95)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "119b9e3f-ba25-4f66-b418-34d0625697a9")
+		(uuid "15ff0c56-b204-4878-a1bd-c61fca007c1c")
 	)
 	(junction
 		(at 134.62 177.8)
@@ -3180,12 +3306,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1d847383-d8d2-4e01-8f85-d296ff4a38f9")
-	)
-	(junction
-		(at 185.42 256.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2b1a2c0c-3ae5-44b7-8482-7c8114654bfa")
 	)
 	(junction
 		(at 198.12 53.34)
@@ -3218,6 +3338,12 @@
 		(uuid "43a253ff-eb00-4cca-9f02-3b5d6fa991fb")
 	)
 	(junction
+		(at 361.95 234.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5544a709-8bc1-4679-b71a-652667a6d0b3")
+	)
+	(junction
 		(at 172.72 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3230,12 +3356,6 @@
 		(uuid "5c88292b-a05a-4200-91a1-bc8447bc6e8b")
 	)
 	(junction
-		(at 196.85 238.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5e2327c3-0694-483d-ac04-559a7d8e2345")
-	)
-	(junction
 		(at 133.35 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3246,6 +3366,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6c01e156-dd40-412d-a53f-cae76c3daaa1")
+	)
+	(junction
+		(at 180.34 256.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c3c5ed4-92bb-4d6a-9ddd-9202b7114f76")
 	)
 	(junction
 		(at 58.42 134.62)
@@ -3288,6 +3414,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8809dbca-b1ed-4f2b-8e49-1cd93af33b62")
+	)
+	(junction
+		(at 198.12 256.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e9199a1-17ba-4474-9fef-7360f561f016")
 	)
 	(junction
 		(at 173.99 76.2)
@@ -3374,6 +3506,12 @@
 		(uuid "cf6c9bca-428d-4ba2-a9d0-318dfd53c893")
 	)
 	(junction
+		(at 198.12 238.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3d86889-f72b-40f0-8ca0-f1c49b2d8dc2")
+	)
+	(junction
 		(at 113.03 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3384,6 +3522,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5cd5d2f-2f40-4e5d-a7d1-c11d4e6191dc")
+	)
+	(junction
+		(at 180.34 238.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dee22fbd-7391-49a6-b13f-68bcc60b600c")
 	)
 	(junction
 		(at 368.3 142.24)
@@ -3410,16 +3554,16 @@
 		(uuid "f2515938-bd14-41e4-a638-bb48ce2e039d")
 	)
 	(junction
-		(at 196.85 256.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f57d1136-9f6a-46b4-9e22-74678b037b51")
-	)
-	(junction
 		(at 254 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f7509aab-6531-4ece-aabe-fceb30ec8284")
+	)
+	(junction
+		(at 374.65 234.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fcdccc0a-8604-4017-9fa6-2af793b2e4be")
 	)
 	(junction
 		(at 58.42 123.19)
@@ -3432,6 +3576,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fe55128a-bbf6-41ea-b5f7-91f27ad291bc")
+	)
+	(no_connect
+		(at 36.83 261.62)
+		(uuid "7207d252-8e13-481f-ac57-732d68329e41")
 	)
 	(wire
 		(pts
@@ -3485,6 +3633,16 @@
 	)
 	(wire
 		(pts
+			(xy 387.35 234.95) (xy 387.35 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "066a9097-61d3-4459-90db-15920c2d58ef")
+	)
+	(wire
+		(pts
 			(xy 322.58 198.12) (xy 322.58 144.78)
 		)
 		(stroke
@@ -3535,16 +3693,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 269.24) (xy 29.21 270.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f3ee651-1b60-4a45-87fe-cd7369c45c4d")
-	)
-	(wire
-		(pts
 			(xy 198.12 53.34) (xy 203.2 53.34)
 		)
 		(stroke
@@ -3572,16 +3720,6 @@
 			(type default)
 		)
 		(uuid "12f5fb42-6dc1-4fda-984c-cb0b5279ae60")
-	)
-	(wire
-		(pts
-			(xy 185.42 256.54) (xy 196.85 256.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1343d013-316e-45ae-b0ab-fc72b2024f21")
 	)
 	(wire
 		(pts
@@ -3655,6 +3793,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 234.95) (xy 361.95 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21273f43-8856-4cae-aee8-eb3a099d79ee")
+	)
+	(wire
+		(pts
 			(xy 368.3 90.17) (xy 368.3 92.71)
 		)
 		(stroke
@@ -3715,7 +3863,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 238.76) (xy 196.85 245.11)
+			(xy 198.12 238.76) (xy 198.12 245.11)
 		)
 		(stroke
 			(width 0)
@@ -3755,6 +3903,16 @@
 	)
 	(wire
 		(pts
+			(xy 361.95 234.95) (xy 374.65 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d785cdd-a984-4938-aa67-12689d33ecd4")
+	)
+	(wire
+		(pts
 			(xy 133.35 86.36) (xy 133.35 85.09)
 		)
 		(stroke
@@ -3762,6 +3920,16 @@
 			(type default)
 		)
 		(uuid "2e195246-5c02-4e7c-8812-52076b3e4ce4")
+	)
+	(wire
+		(pts
+			(xy 198.12 256.54) (xy 215.9 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e374f93-b60b-4698-8a79-f0f44aed45e4")
 	)
 	(wire
 		(pts
@@ -3835,7 +4003,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 256.54) (xy 185.42 257.81)
+			(xy 180.34 256.54) (xy 180.34 257.81)
 		)
 		(stroke
 			(width 0)
@@ -3925,7 +4093,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 256.54) (xy 208.28 255.27)
+			(xy 215.9 256.54) (xy 215.9 255.27)
 		)
 		(stroke
 			(width 0)
@@ -3975,7 +4143,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 250.19) (xy 196.85 256.54)
+			(xy 198.12 250.19) (xy 198.12 256.54)
 		)
 		(stroke
 			(width 0)
@@ -4025,7 +4193,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 250.19) (xy 185.42 256.54)
+			(xy 180.34 250.19) (xy 180.34 256.54)
 		)
 		(stroke
 			(width 0)
@@ -4085,6 +4253,16 @@
 	)
 	(wire
 		(pts
+			(xy 387.35 234.95) (xy 387.35 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cb52fc8-d3d4-4fc1-8cb7-0a34f30e8cd8")
+	)
+	(wire
+		(pts
 			(xy 175.26 163.83) (xy 166.37 163.83)
 		)
 		(stroke
@@ -4092,16 +4270,6 @@
 			(type default)
 		)
 		(uuid "4ccf95d4-a11d-45c3-b394-48f1d921260d")
-	)
-	(wire
-		(pts
-			(xy 196.85 238.76) (xy 208.28 238.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4dcf890d-35c1-4be1-8cb0-330da9710fde")
 	)
 	(wire
 		(pts
@@ -4175,7 +4343,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 238.76) (xy 208.28 240.03)
+			(xy 215.9 238.76) (xy 215.9 240.03)
 		)
 		(stroke
 			(width 0)
@@ -4455,7 +4623,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 245.11) (xy 185.42 238.76)
+			(xy 180.34 245.11) (xy 180.34 238.76)
 		)
 		(stroke
 			(width 0)
@@ -4472,6 +4640,16 @@
 			(type default)
 		)
 		(uuid "89db49b5-b569-4e02-8623-82dce7885d07")
+	)
+	(wire
+		(pts
+			(xy 180.34 238.76) (xy 198.12 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c2866c8-0758-48ac-8103-bd6790e0e510")
 	)
 	(wire
 		(pts
@@ -4565,6 +4743,26 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 238.76) (xy 215.9 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bd34512-06bb-4d1d-bc9f-d3838cbad064")
+	)
+	(wire
+		(pts
+			(xy 349.25 234.95) (xy 349.25 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c4ef4a1-e9ed-4a96-a881-b64a324a3067")
+	)
+	(wire
+		(pts
 			(xy 80.01 55.88) (xy 149.86 55.88)
 		)
 		(stroke
@@ -4592,6 +4790,16 @@
 			(type default)
 		)
 		(uuid "a54beb16-0a92-4c65-a472-3bf28a387c8f")
+	)
+	(wire
+		(pts
+			(xy 374.65 234.95) (xy 387.35 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a56f2431-58aa-4faa-9b91-737a8824c790")
 	)
 	(wire
 		(pts
@@ -4765,7 +4973,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 237.49) (xy 185.42 238.76)
+			(xy 180.34 237.49) (xy 180.34 238.76)
 		)
 		(stroke
 			(width 0)
@@ -4862,6 +5070,16 @@
 			(type default)
 		)
 		(uuid "c29b412e-6dc2-4271-9c2d-1cc52039349d")
+	)
+	(wire
+		(pts
+			(xy 180.34 256.54) (xy 198.12 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3c9b5b5-2506-4e67-8332-0d6606c32b8d")
 	)
 	(wire
 		(pts
@@ -5045,6 +5263,16 @@
 	)
 	(wire
 		(pts
+			(xy 361.95 234.95) (xy 361.95 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d44b9b11-59e2-442c-98b4-7c90969738b4")
+	)
+	(wire
+		(pts
 			(xy 175.26 163.83) (xy 175.26 167.64)
 		)
 		(stroke
@@ -5062,16 +5290,6 @@
 			(type default)
 		)
 		(uuid "d7c77533-72ae-42d0-895d-be7ef3bfb4c8")
-	)
-	(wire
-		(pts
-			(xy 196.85 256.54) (xy 208.28 256.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d89a0ed7-50e8-4d6c-a7cb-88476b1dd7a5")
 	)
 	(wire
 		(pts
@@ -5125,16 +5343,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 238.76) (xy 196.85 238.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e206d282-4f4b-463a-8af0-54d2e65b3d36")
-	)
-	(wire
-		(pts
 			(xy 214.63 184.15) (xy 219.71 184.15)
 		)
 		(stroke
@@ -5152,6 +5360,16 @@
 			(type default)
 		)
 		(uuid "e328bcba-2e52-42fc-8ced-a24292d94096")
+	)
+	(wire
+		(pts
+			(xy 374.65 234.95) (xy 374.65 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e36c44cd-1a8d-4022-b841-ae5dc637a57c")
 	)
 	(wire
 		(pts
@@ -5527,7 +5745,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 267.97 203.2 0)
+		(at 223.52 160.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5536,9 +5754,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "046c2ded-1687-4374-b161-45e37626f1ee")
-		(property "Reference" "R24"
-			(at 270.51 201.9299 0)
+		(uuid "0864cb1b-30f2-4026-99cb-152d80f5a3db")
+		(property "Reference" "R19"
+			(at 226.06 158.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5548,8 +5766,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 270.51 204.4699 0)
+		(property "Value" "10k 0.5%"
+			(at 226.06 161.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5559,8 +5777,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 268.986 203.454 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 224.536 160.274 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5570,8 +5788,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 267.97 203.2 0)
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 223.52 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5582,7 +5800,18 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 267.97 203.2 0)
+			(at 223.52 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "CRCW060310K0DKEAHP"
+			(at 223.52 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5593,98 +5822,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "0ed13318-c99a-4e97-97a0-e620ed41d91e")
+			(uuid "526f93b9-19e0-4b7f-a40f-2535c9e9bfaf")
 		)
 		(pin "1"
-			(uuid "8fa001a7-1628-4196-bb47-40b81a910df0")
+			(uuid "ff31c7d2-b924-48bd-9371-bb70ced9f1b1")
 		)
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Barrel_Jack_MountingPin")
-		(at 29.21 261.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07d1241e-2693-45db-af2f-18a6cbf385c2")
-		(property "Reference" "J4"
-			(at 29.21 252.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Barrel_Jack_MountingPin"
-			(at 29.21 255.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 30.48 262.636 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 30.48 262.636 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "DC Barrel Jack with a mounting pin"
-			(at 29.21 261.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "84cf3fae-f2b4-4274-a187-f3e9285ce5e1")
-		)
-		(pin "MP"
-			(uuid "29620284-243f-4155-946a-5a764caca9d6")
-		)
-		(pin "1"
-			(uuid "5d18d977-d77d-4708-82c8-ddf2078921c2")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "J4")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -5702,7 +5848,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b578787-ebc8-4172-8865-11200f80235d")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR014"
 			(at 113.03 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -5762,86 +5908,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 186.69 139.7 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0c76047b-423f-497f-8f42-798a7ecb4336")
-		(property "Reference" "R14"
-			(at 182.88 138.176 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 190.246 138.176 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.944 138.684 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 186.69 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "11cccb63-2f05-45d3-884c-9f7f030ecaf5")
-		)
-		(pin "1"
-			(uuid "279bf4ab-0796-4742-a7f9-feddf007a665")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R14")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -5859,7 +5926,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d848d01-9959-4b74-92a5-ef2ef91cd9ee")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR018"
 			(at 151.13 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -5919,7 +5986,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR011")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -5938,7 +6005,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0fe7d8e5-7d58-4258-8af0-458734223fc0")
-		(property "Reference" "J2"
+		(property "Reference" "J3"
 			(at 377.825 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5948,7 +6015,7 @@
 				)
 			)
 		)
-		(property "Value" "AudioJack3_Ground_Switch"
+		(property "Value" "NMJ6HCD2"
 			(at 377.825 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5958,7 +6025,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NMJ6HCD2_Horizontal"
 			(at 375.92 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -5969,7 +6036,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://cdn.bfldr.com/82PPHNK3/at/kfzkhv8zfwjvm6cvqxxnm/NMJ6HCD2_Datasheet.pdf?format=pdf"
 			(at 375.92 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -5981,6 +6048,17 @@
 			)
 		)
 		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Grounded Sleeve, Switched Poles (Normalling)"
+			(at 375.92 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "NMJ6HCD2"
 			(at 375.92 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -6015,7 +6093,100 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "J2")
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 267.97 203.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "109bf7bf-956c-4561-9f07-686ebb20ed82")
+		(property "Reference" "R25"
+			(at 270.51 201.9299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k 0.5%"
+			(at 270.51 204.4699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 268.986 203.454 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 267.97 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 267.97 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "CRCW060310K0DKEAHP"
+			(at 267.97 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "870e16d9-0116-4482-a0e4-b56c4980a959")
+		)
+		(pin "1"
+			(uuid "7ac52622-5f0d-4a87-a92d-2df5f4d1eb42")
+		)
+		(instances
+			(project "AL_Ternate Buffer"
+				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -6023,7 +6194,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 185.42 237.49 0)
+		(at 180.34 237.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6033,8 +6204,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "112702a5-d7d6-4019-819a-04cf3824a208")
-		(property "Reference" "#PWR013"
-			(at 185.42 241.3 0)
+		(property "Reference" "#PWR020"
+			(at 180.34 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6045,7 +6216,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 185.42 232.41 0)
+			(at 180.34 232.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6055,7 +6226,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 237.49 0)
+			(at 180.34 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6066,7 +6237,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 237.49 0)
+			(at 180.34 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6077,7 +6248,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 185.42 237.49 0)
+			(at 180.34 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6093,7 +6264,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR013")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -6109,10 +6280,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "122444d1-de44-40be-803e-7ad0e52f4579")
 		(property "Reference" "C14"
-			(at 210.8263 76.2 90)
+			(at 210.82 75.184 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6121,8 +6291,8 @@
 				)
 			)
 		)
-		(property "Value" "10u"
-			(at 210.8263 78.74 90)
+		(property "Value" "10u 25V 10%"
+			(at 210.82 77.724 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6131,7 +6301,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 210.82 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -6142,7 +6312,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT21BC71E106KE13-01.pdf"
 			(at 210.82 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -6155,6 +6325,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 210.82 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "GRT21BC71E106KE13L"
+			(at 210.82 82.55 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6189,9 +6370,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "13d722b8-26e6-4d30-8087-8ba232fec1e4")
-		(property "Reference" "R16"
-			(at 218.44 81.026 90)
+		(uuid "14a101ac-b57f-4383-b801-4709e383ff3b")
+		(property "Reference" "R17"
+			(at 218.44 80.518 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6200,8 +6381,8 @@
 				)
 			)
 		)
-		(property "Value" "10k"
-			(at 225.806 81.026 90)
+		(property "Value" "10k 0.5%"
+			(at 225.806 80.518 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6210,7 +6391,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 222.504 81.534 90)
 			(hide yes)
 			(show_name no)
@@ -6221,7 +6402,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 222.25 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -6243,16 +6424,117 @@
 				)
 			)
 		)
+		(property "Part Number" "CRCW060310K0DKEAHP"
+			(at 222.25 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
-			(uuid "c19d8793-2b52-4b50-8591-4f7da0bb7d18")
+			(uuid "6ae9c0dd-f8c4-44d4-aec1-226fe998e54c")
 		)
 		(pin "1"
-			(uuid "5bae8a7f-f6ea-48a7-81ce-db1ec64dc5c8")
+			(uuid "40b11104-606d-4db4-90d6-b439a8e6f7a4")
 		)
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R16")
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 125.73 177.8 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "16d10d7d-689a-4697-a8ce-43e14e48c6f8")
+		(property "Reference" "R5"
+			(at 121.92 175.768 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k 0.5%"
+			(at 129.286 175.768 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 125.984 176.784 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 125.73 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 125.73 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "CRCW060310K0DKEAHP"
+			(at 125.73 177.8 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "91c9db6a-77a7-44fa-8079-7ec692ccf05a")
+		)
+		(pin "1"
+			(uuid "2e2f43ea-0ca3-4170-adcb-1edeb0d047a0")
+		)
+		(instances
+			(project "AL_Ternate Buffer"
+				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -6280,7 +6562,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100p"
+		(property "Value" "100p 50V 5%"
 			(at 174.752 70.612 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6291,7 +6573,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 173.99 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -6302,7 +6584,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM2165C1H101JA16-01.pdf"
 			(at 173.99 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -6314,6 +6596,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 173.99 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "GCM2165C1H101JA16D"
 			(at 173.99 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -6361,7 +6654,7 @@
 				)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1u 50V 10%"
 			(at 152.4063 52.07 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6371,7 +6664,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 152.4 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -6382,7 +6675,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM2165C1H101JA16-01.pdf"
 			(at 152.4 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -6395,6 +6688,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 152.4 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "GCM21BR71H105KA03L"
+			(at 152.4 55.88 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6430,8 +6734,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "20d0b5e8-4750-4338-9213-43ce4a486851")
-		(property "Reference" "R22"
-			(at 238.76 182.626 90)
+		(property "Reference" "R23"
+			(at 238.76 182.118 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6440,8 +6744,8 @@
 				)
 			)
 		)
-		(property "Value" "10k"
-			(at 246.126 182.626 90)
+		(property "Value" "10k 0.5%"
+			(at 246.126 182.118 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6450,7 +6754,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 242.824 183.134 90)
 			(hide yes)
 			(show_name no)
@@ -6461,7 +6765,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 242.57 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -6483,6 +6787,17 @@
 				)
 			)
 		)
+		(property "Part Number" "CRCW060310K0DKEAHP"
+			(at 242.57 184.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "dd75c86c-c778-4f30-bd29-d6a98a6af663")
 		)
@@ -6492,7 +6807,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R22")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -6520,7 +6835,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10u 25V 10%"
 			(at 153.6763 135.89 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6530,7 +6845,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 153.67 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -6541,7 +6856,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT21BC71E106KE13-01.pdf"
 			(at 153.67 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -6554,6 +6869,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 153.67 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "GRT21BC71E106KE13L"
+			(at 153.67 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6590,7 +6916,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "212bb545-d5a7-4fba-902a-4e47abeb9339")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR07"
 			(at 69.85 261.62 0)
 			(hide yes)
 			(show_name no)
@@ -6650,7 +6976,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR032")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -6668,7 +6994,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23182518-d188-4323-aef5-59acc5e911e4")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR05"
 			(at 50.8 257.81 0)
 			(hide yes)
 			(show_name no)
@@ -6728,7 +7054,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR030")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -6745,7 +7071,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2398d66a-b3fa-43e4-b406-092aa181d950")
-		(property "Reference" "R8"
+		(property "Reference" "R9"
 			(at 161.29 54.356 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6755,7 +7081,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1k 1%"
 			(at 168.656 54.356 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6765,7 +7091,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 165.354 54.864 90)
 			(hide yes)
 			(show_name no)
@@ -6776,7 +7102,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20132/rca-sre3.pdf"
 			(at 165.1 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -6798,6 +7124,17 @@
 				)
 			)
 		)
+		(property "Part Number" "RCA06031K00FKEASR"
+			(at 165.1 55.88 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7a1133b4-2b59-4d5f-bc84-09324a517e97")
 		)
@@ -6807,7 +7144,97 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R8")
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 186.69 139.7 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "23cca1d6-3cd9-4a94-9d13-ae228bc8276a")
+		(property "Reference" "R15"
+			(at 182.88 137.668 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k 0.5%"
+			(at 190.246 137.668 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 186.944 138.684 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 186.69 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 186.69 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "CRCW060310K0DKEAHP"
+			(at 186.69 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "92447321-c3ea-413d-b788-55d05936cac4")
+		)
+		(pin "1"
+			(uuid "717028b6-61c3-4ae2-944a-8efd21b83f2d")
+		)
+		(instances
+			(project "AL_Ternate Buffer"
+				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -6825,7 +7252,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25ae9a6f-de6a-44b8-9d78-1a9a915aec75")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR03"
 			(at 48.26 259.08 0)
 			(hide yes)
 			(show_name no)
@@ -6886,7 +7313,87 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR031")
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 374.65 226.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "267fe83b-3213-4ef3-8f62-76052a46a897")
+		(property "Reference" "H3"
+			(at 377.19 224.7899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 377.19 226.0599 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad"
+			(at 374.65 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 374.65 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 374.65 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8b44f3ae-180d-4ae1-a4b0-523e2f0f0d18")
+		)
+		(instances
+			(project "AL_Ternate Buffer"
+				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -6904,7 +7411,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26dd7b18-36ca-4918-a87b-f5d80673a436")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR028"
 			(at 368.3 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -6964,7 +7471,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR021")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -6982,7 +7489,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28ad087f-031b-4085-9995-01a9bbb1433b")
-		(property "Reference" "R6"
+		(property "Reference" "R7"
 			(at 137.16 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6993,7 +7500,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 0.5%"
 			(at 137.16 184.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7004,7 +7511,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 135.636 183.134 90)
 			(hide yes)
 			(show_name no)
@@ -7015,7 +7522,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 134.62 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -7037,6 +7544,17 @@
 				)
 			)
 		)
+		(property "Part Number" "CRCW060310K0DKEAHP"
+			(at 134.62 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5be6e07f-8dfd-4855-811b-ac2044f6ebd0")
 		)
@@ -7046,7 +7564,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R6")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -7074,7 +7592,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10u 25V 10%"
 			(at 212.0963 151.13 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7084,7 +7602,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 212.09 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -7095,7 +7613,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT21BC71E106KE13-01.pdf"
 			(at 212.09 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -7108,6 +7626,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 212.09 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "GRT21BC71E106KE13L"
+			(at 212.09 154.94 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7144,7 +7673,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f8bf79e-f784-41ac-b466-4811a4c9fa1c")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR024"
 			(at 266.7 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -7204,87 +7733,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 260.35 96.52 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3c1be01b-9d9c-44a6-b0ca-d33c08170224")
-		(property "Reference" "C17"
-			(at 260.3563 90.17 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 260.3563 92.71 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 260.35 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 260.35 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 260.35 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6e100781-c6c1-44bd-80d2-f1a7960c7931")
-		)
-		(pin "1"
-			(uuid "3b5865f0-dfbf-4e0c-a90c-666d712fb877")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "C17")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -7302,7 +7751,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "408eef96-716f-4a75-8467-e940eef49562")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR017"
 			(at 134.62 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -7362,7 +7811,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR010")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -7380,7 +7829,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4118ea2f-9848-460b-8a09-37cbd6a1da71")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR029"
 			(at 368.3 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -7440,7 +7889,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR038")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -7448,7 +7897,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 125.73 177.8 90)
+		(at 124.46 76.2 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7456,9 +7905,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "50787e8c-c65c-4a50-bbf4-ca3ac8942ea8")
+		(uuid "4e8acb2b-5d11-4216-83a4-630e1ecdf8ff")
 		(property "Reference" "R4"
-			(at 121.92 176.276 90)
+			(at 120.65 74.168 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7467,8 +7916,8 @@
 				)
 			)
 		)
-		(property "Value" "10k"
-			(at 129.286 176.276 90)
+		(property "Value" "10k 0.5%"
+			(at 128.016 74.168 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7477,8 +7926,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 125.984 176.784 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 124.714 75.184 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7488,8 +7937,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 125.73 177.8 0)
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 124.46 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7500,7 +7949,18 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 125.73 177.8 0)
+			(at 124.46 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "CRCW060310K0DKEAHP"
+			(at 124.46 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7511,10 +7971,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "1d6c553d-bfae-4ee8-beb4-266c784e720d")
+			(uuid "bc332357-5e47-4f02-94d0-969db014a382")
 		)
 		(pin "1"
-			(uuid "9bc79135-bb8d-4777-88c4-fb55d1002101")
+			(uuid "2d0ac0c9-c0e5-48c4-b8f4-999136185417")
 		)
 		(instances
 			(project "AL_Ternate Buffer"
@@ -7537,7 +7997,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5119b40c-e64b-4096-bfc0-74b295fa3c7d")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR010"
 			(at 111.76 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -7597,7 +8057,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR03")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -7691,10 +8151,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5727007b-66e6-4b7d-bc85-cba66d2eae91")
-		(property "Reference" "R12"
-			(at 168.91 168.9099 0)
+		(property "Reference" "R13"
+			(at 167.894 167.894 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7704,8 +8163,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1M"
-			(at 168.91 171.4499 0)
+		(property "Value" "1M 1%"
+			(at 167.894 172.212 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7715,7 +8174,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 167.386 170.434 90)
 			(hide yes)
 			(show_name no)
@@ -7726,7 +8185,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/560112116001.pdf"
 			(at 166.37 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -7748,6 +8207,17 @@
 				)
 			)
 		)
+		(property "Part Number" "RCA06031M00FKEASR"
+			(at 166.37 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ba8f5d4b-cdad-42a3-ad60-a61309fab8f7")
 		)
@@ -7757,7 +8227,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R12")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -7785,7 +8255,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u"
+		(property "Value" "47u 35V 20%"
 			(at 151.892 83.312 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7796,7 +8266,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 			(at 151.13 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -7807,7 +8277,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
 			(at 151.13 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -7829,6 +8299,17 @@
 				)
 			)
 		)
+		(property "Part Number" "CGA9N1X7R1V476M230KC"
+			(at 151.13 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "971f952e-d76d-4bac-b67f-37f6fede2cd8")
 		)
@@ -7839,6 +8320,96 @@
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 260.35 96.52 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5dfbbab2-06fa-46e4-a4fe-b386478b4392")
+		(property "Reference" "C17"
+			(at 257.048 90.424 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u 75V 10%"
+			(at 261.62 92.71 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+			(at 260.35 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/tdk/CGA6P1X7R1N106K250AC/10240635"
+			(at 260.35 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 260.35 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "CGA6P1X7R1N106K250AC"
+			(at 260.35 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "791da05c-e49a-4a1f-b97f-411ea058c866")
+		)
+		(pin "1"
+			(uuid "f5fed4fb-00e9-46a0-8ea6-7c07ec887091")
+		)
+		(instances
+			(project "AL_Ternate Buffer"
+				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -7867,7 +8438,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "QBL8IW60D-NW"
 			(at 87.63 260.6674 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7878,7 +8449,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 83.82 257.81 0)
 			(hide yes)
 			(show_name no)
@@ -7889,7 +8460,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.qt-brightek.com/datasheet/QBL8IW60D-XX.pdf"
 			(at 83.82 257.81 0)
 			(hide yes)
 			(show_name no)
@@ -7913,6 +8484,17 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 83.82 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "QBL8IW60D-NW"
+			(at 83.82 257.81 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8017,6 +8599,96 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
+		(at 223.52 184.15 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "60372886-2686-429c-bd7b-af9a53b76c96")
+		(property "Reference" "R20"
+			(at 219.71 182.118 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k 0.5%"
+			(at 227.076 182.118 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 223.774 183.134 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 223.52 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 223.52 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "CRCW060310K0DKEAHP"
+			(at 223.52 184.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "dc034488-4d26-4c90-92fb-7e985b28746f")
+		)
+		(pin "1"
+			(uuid "abf76854-8e26-4a87-bf6e-32bda3d72457")
+		)
+		(instances
+			(project "AL_Ternate Buffer"
+				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
 		(at 133.35 81.28 0)
 		(unit 1)
 		(body_style 1)
@@ -8027,7 +8699,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64ef1644-eb80-4ac3-8a3e-78516e724f49")
-		(property "Reference" "R5"
+		(property "Reference" "R6"
 			(at 135.89 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8038,7 +8710,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 0.5%"
 			(at 135.89 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8049,7 +8721,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 134.366 81.534 90)
 			(hide yes)
 			(show_name no)
@@ -8060,7 +8732,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 133.35 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -8072,6 +8744,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 133.35 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "CRCW060310K0DKEAHP"
 			(at 133.35 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -8091,7 +8774,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R5")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -8108,8 +8791,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "683f3b28-6fe3-47ac-930a-bc2fd137ec0d")
-		(property "Reference" "R13"
-			(at 181.61 36.576 90)
+		(property "Reference" "R14"
+			(at 181.61 36.068 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8118,8 +8801,8 @@
 				)
 			)
 		)
-		(property "Value" "10k"
-			(at 188.976 36.576 90)
+		(property "Value" "10k 0.5%"
+			(at 188.976 36.068 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8128,7 +8811,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 185.674 37.084 90)
 			(hide yes)
 			(show_name no)
@@ -8139,7 +8822,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 185.42 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -8161,6 +8844,17 @@
 				)
 			)
 		)
+		(property "Part Number" "CRCW060310K0DKEAHP"
+			(at 185.42 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "42f31fc0-6fee-4c0d-855b-c6f994700ea5")
 		)
@@ -8170,7 +8864,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R13")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -8188,7 +8882,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6930a111-0292-4f61-a21b-53896931b331")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR01"
 			(at 29.21 248.92 0)
 			(hide yes)
 			(show_name no)
@@ -8248,7 +8942,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR028")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -8264,10 +8958,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6a9ab45b-8521-48aa-ae02-ac4b910999c7")
-		(property "Reference" "R9"
-			(at 167.64 67.3099 0)
+		(property "Reference" "R10"
+			(at 167.132 65.532 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8277,8 +8970,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1M"
-			(at 167.64 69.8499 0)
+		(property "Value" "1M 1%"
+			(at 166.624 70.866 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8288,7 +8981,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 166.116 68.834 90)
 			(hide yes)
 			(show_name no)
@@ -8299,7 +8992,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/560112116001.pdf"
 			(at 165.1 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -8321,6 +9014,17 @@
 				)
 			)
 		)
+		(property "Part Number" "RCA06031M00FKEASR"
+			(at 165.1 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "26b11a7a-bee1-4dce-93c0-d6c769c4f9cb")
 		)
@@ -8330,7 +9034,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R9")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -8348,7 +9052,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b044633-6e5c-4510-9c0b-66df44ba6232")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR025"
 			(at 267.97 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -8408,7 +9112,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR018")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -8459,7 +9163,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p35.pdf"
 			(at 29.21 237.236 90)
 			(hide yes)
 			(show_name no)
@@ -8514,6 +9218,17 @@
 				)
 			)
 		)
+		(property "Part Number" "232-M"
+			(at 29.21 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "72c95837-8051-4fbb-9150-a01571044485")
 		)
@@ -8540,7 +9255,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6bf8c88c-e395-4bb1-a33f-b04a90e739ab")
-		(property "Reference" "R17"
+		(property "Reference" "R18"
 			(at 218.44 97.536 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8560,7 +9275,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 222.504 98.044 90)
 			(hide yes)
 			(show_name no)
@@ -8571,7 +9286,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/560112116001.pdf"
 			(at 222.25 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -8593,6 +9308,17 @@
 				)
 			)
 		)
+		(property "Part Number" "560112116001"
+			(at 222.25 99.06 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "004a157b-e604-4b5d-a444-e76ba54a545f")
 		)
@@ -8602,7 +9328,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R17")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -8621,7 +9347,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6dc36f8a-b078-4819-a2d5-7b0b87e23f5c")
-		(property "Reference" "J3"
+		(property "Reference" "J4"
 			(at 377.825 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8631,7 +9357,7 @@
 				)
 			)
 		)
-		(property "Value" "AudioJack3_Ground_Switch"
+		(property "Value" "NMJ6HCD2"
 			(at 377.825 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8641,7 +9367,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NMJ6HCD2_Horizontal"
 			(at 375.92 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -8652,7 +9378,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://cdn.bfldr.com/82PPHNK3/at/kfzkhv8zfwjvm6cvqxxnm/NMJ6HCD2_Datasheet.pdf?format=pdf"
 			(at 375.92 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -8664,6 +9390,17 @@
 			)
 		)
 		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Grounded Sleeve, Switched Poles (Normalling)"
+			(at 375.92 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "NMJ6HCD2"
 			(at 375.92 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -8698,85 +9435,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 29.21 270.51 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6edaa8d8-c7d0-44f9-ae35-7a4c2e56ba72")
-		(property "Reference" "#PWR029"
-			(at 29.21 276.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 29.21 275.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 270.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 29.21 270.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 270.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b16c42b8-621f-4cca-a03c-ce53ba58385b")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR029")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -8793,7 +9452,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6f3e7db2-593f-4ff7-929c-c61693afe979")
-		(property "Reference" "R11"
+		(property "Reference" "R12"
 			(at 162.56 155.956 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8803,7 +9462,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1k 1%"
 			(at 169.926 155.956 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8813,7 +9472,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 166.624 156.464 90)
 			(hide yes)
 			(show_name no)
@@ -8824,7 +9483,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20132/rca-sre3.pdf"
 			(at 166.37 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -8846,6 +9505,17 @@
 				)
 			)
 		)
+		(property "Part Number" "RCA06031K00FKEASR"
+			(at 166.37 157.48 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ed9844dd-bbc0-4c25-845d-412be13504db")
 		)
@@ -8855,109 +9525,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 58.42 255.27 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "700ce44c-f904-4eb6-b7ce-7ad45df858ca")
-		(property "Reference" "D2"
-			(at 58.42 248.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "S3GHE3_A/I"
-			(at 58.42 251.46 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 255.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 255.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 58.42 255.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 58.42 255.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 58.42 255.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5af1914b-bdee-4789-a8ea-bd1c6947f773")
-		)
-		(pin "2"
-			(uuid "53e0c5b9-0858-40f4-838e-36fdea129ad8")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "D2")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -8975,7 +9543,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "72e923c4-b7a6-459a-8844-9824d08d7187")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR08"
 			(at 83.82 252.73 0)
 			(hide yes)
 			(show_name no)
@@ -9035,7 +9603,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR033")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -9096,6 +9664,17 @@
 			)
 		)
 		(property "Description" "Quad Low-Power, Low-Noise, Low-Distortion, Bipolar-Input SoundPlus Audio Operational Amplifiers, SOIC-14"
+			(at 241.3 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "OPA1664AIDR"
 			(at 241.3 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -9222,6 +9801,17 @@
 				)
 			)
 		)
+		(property "Part Number" "OPA1664AIDR"
+			(at 184.15 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "13"
 			(uuid "76430b35-5828-489f-b4d2-12f7df0bcd8b")
 		)
@@ -9285,7 +9875,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75d6bb60-e4af-4bd5-9c41-8ace235ebe49")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR022"
 			(at 222.25 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -9345,7 +9935,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR015")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -9363,7 +9953,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "775cfd04-56a4-4ab0-9a66-d6d273e4f9f3")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR013"
 			(at 113.03 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -9423,7 +10013,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR06")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -9439,10 +10029,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "77ea2881-a07f-49a8-b96c-34f9937c1102")
 		(property "Reference" "C18"
-			(at 261.6263 191.77 90)
+			(at 258.318 192.024 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9451,8 +10040,8 @@
 				)
 			)
 		)
-		(property "Value" "10u"
-			(at 261.6263 194.31 90)
+		(property "Value" "10u 75V 10%"
+			(at 262.89 194.31 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9461,7 +10050,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 261.62 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -9472,7 +10061,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/tdk/CGA6P1X7R1N106K250AC/10240635"
 			(at 261.62 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -9485,6 +10074,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 261.62 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "CGA6P1X7R1N106K250AC"
+			(at 261.62 198.12 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9521,7 +10121,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78068eff-f735-434a-a9e2-0119be9b514a")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR06"
 			(at 58.42 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -9581,86 +10181,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 223.52 184.15 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7a8400ab-b065-42c7-966c-90c019ca37b4")
-		(property "Reference" "R19"
-			(at 219.71 182.626 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 227.076 182.626 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.774 183.134 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 223.52 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "eeec400c-9380-43c2-840e-ec353c76c075")
-		)
-		(pin "1"
-			(uuid "94af377f-d325-4635-8102-9705bda2eb4e")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R19")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -9678,7 +10199,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "837833da-a6b9-47ba-9ec8-8ace320b854b")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR023"
 			(at 223.52 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -9738,7 +10259,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR016")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -9776,7 +10297,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SMB-SMC_Universal_Handsoldering"
 			(at 58.42 241.3 0)
 			(hide yes)
 			(show_name no)
@@ -9787,7 +10308,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/88713/s3a.pdf"
 			(at 58.42 241.3 0)
 			(hide yes)
 			(show_name no)
@@ -9821,6 +10342,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 58.42 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "S3GHE3_A/I"
 			(at 58.42 241.3 0)
 			(hide yes)
 			(show_name no)
@@ -9868,7 +10400,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u"
+		(property "Value" "47u 35V 20%"
 			(at 153.162 184.912 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9879,7 +10411,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 			(at 152.4 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -9890,7 +10422,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
 			(at 152.4 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -9912,6 +10444,17 @@
 				)
 			)
 		)
+		(property "Part Number" "CGA9N1X7R1V476M230KC"
+			(at 152.4 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d897c831-f76e-41b6-8f33-7d502ba192d4")
 		)
@@ -9922,6 +10465,86 @@
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 387.35 226.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d4fd4cf-4c47-45bc-9ca8-3d920fa1f2da")
+		(property "Reference" "H4"
+			(at 389.89 224.7899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 389.89 226.0599 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad"
+			(at 387.35 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 387.35 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 387.35 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b66507fc-0af7-4acc-b339-371ca979102d")
+		)
+		(instances
+			(project "AL_Ternate Buffer"
+				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -9949,7 +10572,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10u 25V 10%"
 			(at 152.4063 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9959,7 +10582,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 152.4 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -9970,7 +10593,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT21BC71E106KE13-01.pdf"
 			(at 152.4 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -9983,6 +10606,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 152.4 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "GRT21BC71E106KE13L"
+			(at 152.4 38.1 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10030,7 +10664,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_SPDT"
+		(property "Value" "7101SYZQE"
 			(at 76.2 245.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10040,7 +10674,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 76.2 251.46 0)
 			(hide yes)
 			(show_name no)
@@ -10051,7 +10685,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-c-k-toggle-7000-series-datasheet?assetguid=fed01bc6-88d0-4bda-b896-13c98cf9e90e"
 			(at 76.2 259.08 0)
 			(hide yes)
 			(show_name no)
@@ -10063,6 +10697,17 @@
 			)
 		)
 		(property "Description" "Switch, single pole double throw"
+			(at 76.2 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "7101SYZQE"
 			(at 76.2 251.46 0)
 			(hide yes)
 			(show_name no)
@@ -10113,7 +10758,7 @@
 				)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1u 50V 10%"
 			(at 153.6763 153.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10123,7 +10768,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 153.67 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -10134,7 +10779,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM2165C1H101JA16-01.pdf"
 			(at 153.67 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -10147,6 +10792,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 153.67 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "GCM21BR71H105KA03L"
+			(at 153.67 157.48 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10193,7 +10849,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10u 25V 10%"
 			(at 210.8263 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10203,7 +10859,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 210.82 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -10214,7 +10870,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT21BC71E106KE13-01.pdf"
 			(at 210.82 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -10227,6 +10883,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 210.82 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "GRT21BC71E106KE13L"
+			(at 210.82 53.34 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10252,87 +10919,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 124.46 76.2 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9c1bea58-3dd5-4c86-a81d-3281dc91ef73")
-		(property "Reference" "R3"
-			(at 120.65 74.676 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 128.016 74.676 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 124.714 75.184 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 124.46 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 124.46 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "277842c6-3c8b-4ad4-a7fe-11a1b5e614c9")
-		)
-		(pin "1"
-			(uuid "33bda511-360a-4885-a181-0180fa683526")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 185.42 257.81 0)
+		(at 180.34 257.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10342,8 +10930,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c59b43f-d5a1-4e2b-b22a-1bffa2444eaf")
-		(property "Reference" "#PWR014"
-			(at 185.42 264.16 0)
+		(property "Reference" "#PWR021"
+			(at 180.34 264.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10354,7 +10942,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 185.42 262.89 0)
+			(at 180.34 262.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10364,7 +10952,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 257.81 0)
+			(at 180.34 257.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10375,7 +10963,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 257.81 0)
+			(at 180.34 257.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10386,7 +10974,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 185.42 257.81 0)
+			(at 180.34 257.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10402,7 +10990,100 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR014")
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 266.7 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c7249ac-03ee-4cae-a8d1-684c659b2613")
+		(property "Reference" "R24"
+			(at 269.24 100.3299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k 0.5%"
+			(at 269.24 102.8699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 267.716 101.854 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 266.7 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 266.7 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "CRCW060310K0DKEAHP"
+			(at 266.7 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8f1befe9-cb66-49ed-9a9c-90f632bb89e9")
+		)
+		(pin "1"
+			(uuid "328a0826-97d9-438a-b460-5c50c523eee3")
+		)
+		(instances
+			(project "AL_Ternate Buffer"
+				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -10420,7 +11101,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f6f095c-b572-4608-9517-a74a906137d4")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR027"
 			(at 355.6 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -10480,7 +11161,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR020")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -10565,6 +11246,197 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D")
+		(at 58.42 255.27 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a28f064c-dccd-4006-9026-ad6c9e0f658f")
+		(property "Reference" "D2"
+			(at 58.42 248.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "S3GHE3_A/I"
+			(at 58.42 251.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMB-SMC_Universal_Handsoldering"
+			(at 58.42 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88713/s3a.pdf"
+			(at 58.42 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 58.42 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 58.42 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 58.42 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "S3GHE3_A/I"
+			(at 58.42 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d790c239-e91b-4658-83cf-e2a9d1eda9d3")
+		)
+		(pin "2"
+			(uuid "750e32aa-7504-4035-8cc1-53a0c601cafb")
+		)
+		(instances
+			(project "AL_Ternate Buffer"
+				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 387.35 236.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4137886-9d07-47c9-bf03-9d815934d462")
+		(property "Reference" "#PWR032"
+			(at 387.35 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 387.35 241.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 387.35 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 387.35 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 387.35 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "94e2711f-1ced-45be-9ae8-16e91efd2894")
+		)
+		(instances
+			(project "AL_Ternate Buffer"
+				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:OPA1664D")
 		(at 185.42 154.94 0)
 		(unit 2)
@@ -10619,6 +11491,17 @@
 			)
 		)
 		(property "Description" "Quad Low-Power, Low-Noise, Low-Distortion, Bipolar-Input SoundPlus Audio Operational Amplifiers, SOIC-14"
+			(at 185.42 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "OPA1664AIDR"
 			(at 185.42 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -10702,7 +11585,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u"
+		(property "Value" "47u 35V 20%"
 			(at 113.792 184.912 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10713,7 +11596,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 			(at 113.03 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -10724,7 +11607,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
 			(at 113.03 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -10736,6 +11619,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 113.03 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "CGA9N1X7R1V476M230KC"
 			(at 113.03 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -10773,7 +11667,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab6e3b95-dd3f-4c3b-bd69-7f67f54931e2")
-		(property "Reference" "R2"
+		(property "Reference" "R3"
 			(at 115.57 170.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10784,7 +11678,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100 5%"
 			(at 115.57 172.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10795,7 +11689,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 114.046 171.704 90)
 			(hide yes)
 			(show_name no)
@@ -10806,7 +11700,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCA.pdf"
 			(at 113.03 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -10828,6 +11722,17 @@
 				)
 			)
 		)
+		(property "Part Number" "RMCA0603JT100R-HP"
+			(at 113.03 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2bbcaadd-98fc-4628-946e-68a0f72c74cf")
 		)
@@ -10837,7 +11742,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R2")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -10855,7 +11760,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "abc4de32-97ca-4a3d-9e77-b8ecc7a4312e")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR019"
 			(at 152.4 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -10915,7 +11820,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR012")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -10943,7 +11848,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100p"
+		(property "Value" "100p 50V 5%"
 			(at 176.022 172.212 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10954,7 +11859,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 175.26 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -10965,7 +11870,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM2165C1H101JA16-01.pdf"
 			(at 175.26 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -10977,6 +11882,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 175.26 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "GCM2165C1H101JA16D"
 			(at 175.26 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -11003,8 +11919,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 223.52 160.02 0)
+		(lib_id "Connector:Barrel_Jack_Switch")
+		(at 29.21 261.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11013,31 +11929,29 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b4f4a230-1628-4b5e-97ed-9f9d3ee58a18")
-		(property "Reference" "R18"
-			(at 226.06 158.7499 0)
+		(uuid "b4530eef-ac92-4530-b323-780c70110458")
+		(property "Reference" "J1"
+			(at 29.21 252.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 226.06 161.2899 0)
+		(property "Value" "FC68148"
+			(at 29.21 255.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 224.536 160.274 90)
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
+			(at 30.48 262.636 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11047,8 +11961,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 223.52 160.02 0)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5482/FC68148.pdf?_gl=1*14tcpvx*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwio_RBhDMARIsAJPveNM9akdeF8v1nUc2PuE-7-qcAThefO9wLIrgoF9OVxap_PiCQXXTZiYaAsVGEALw_wcB&gclsrc=aw.ds&gbraid=0AAAAADrbLljJrzLsH2QZ2NaEiAkxzcYUI"
+			(at 30.48 262.636 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11058,8 +11972,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 223.52 160.02 0)
+		(property "Description" "DC Barrel Jack with an internal switch"
+			(at 29.21 261.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11069,16 +11983,30 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "acca4ca5-3a1b-4cfa-8160-a8808ae1ef55")
+		(property "Part Number" "FC68148"
+			(at 29.21 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "1a7110c4-642e-4979-9460-1a87cf52d718")
+			(uuid "8e10e2e4-e551-4aa7-bf8a-f99d33743968")
+		)
+		(pin "3"
+			(uuid "f800ba36-c83a-4086-b1d8-3ebaf6054107")
+		)
+		(pin "2"
+			(uuid "b1ade0cc-af9f-40d7-b3c6-a2dfeeb9eb8f")
 		)
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R18")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -11096,7 +12024,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bb79f049-b274-4073-989a-2420ef761251")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 48.895 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11106,7 +12034,7 @@
 				)
 			)
 		)
-		(property "Value" "AudioJack3_Ground_Switch"
+		(property "Value" "NMJ6HCD2"
 			(at 48.895 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11116,7 +12044,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NMJ6HCD2_Horizontal"
 			(at 50.8 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -11127,7 +12055,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://cdn.bfldr.com/82PPHNK3/at/kfzkhv8zfwjvm6cvqxxnm/NMJ6HCD2_Datasheet.pdf?format=pdf"
 			(at 50.8 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -11139,6 +12067,17 @@
 			)
 		)
 		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Grounded Sleeve, Switched Poles (Normalling)"
+			(at 50.8 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "NMJ6HCD2"
 			(at 50.8 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -11173,7 +12112,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -11190,7 +12129,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "be078d4a-7777-4813-9f38-5fbe426afa50")
-		(property "Reference" "R20"
+		(property "Reference" "R21"
 			(at 219.71 199.136 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11210,7 +12149,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 223.774 199.644 90)
 			(hide yes)
 			(show_name no)
@@ -11221,7 +12160,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/560112116001.pdf"
 			(at 223.52 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -11243,56 +12182,8 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "96762bad-63eb-41d2-88a3-789022e5418a")
-		)
-		(pin "1"
-			(uuid "6039520e-38f0-48d7-95ba-917cc353f27a")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 185.42 247.65 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "be200929-69c1-4043-86cf-fe374823224b")
-		(property "Reference" "C11"
-			(at 186.436 245.364 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100u"
-			(at 186.182 249.682 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 185.42 247.65 0)
+		(property "Part Number" "560112116001"
+			(at 223.52 200.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11302,8 +12193,67 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 185.42 247.65 0)
+		(pin "2"
+			(uuid "96762bad-63eb-41d2-88a3-789022e5418a")
+		)
+		(pin "1"
+			(uuid "6039520e-38f0-48d7-95ba-917cc353f27a")
+		)
+		(instances
+			(project "AL_Ternate Buffer"
+				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 180.34 247.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "be200929-69c1-4043-86cf-fe374823224b")
+		(property "Reference" "C11"
+			(at 181.356 245.364 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n 100V 10%"
+			(at 181.102 249.682 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 180.34 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM2165C1H101JA16-01.pdf"
+			(at 180.34 247.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11314,7 +12264,18 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 185.42 247.65 0)
+			(at 180.34 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "GCJ21BR72A104KA01L"
+			(at 180.34 247.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11350,7 +12311,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c15b6349-9944-4f4d-9a0c-7dced4c23e14")
-		(property "Reference" "R7"
+		(property "Reference" "R8"
 			(at 161.29 36.576 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11360,7 +12321,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1k 1%"
 			(at 168.656 36.576 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11370,7 +12331,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 165.354 37.084 90)
 			(hide yes)
 			(show_name no)
@@ -11381,7 +12342,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20132/rca-sre3.pdf"
 			(at 165.1 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -11403,6 +12364,17 @@
 				)
 			)
 		)
+		(property "Part Number" "RCA06031K00FKEASR"
+			(at 165.1 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ead76837-0a74-4eaa-ae2f-8e68dd8bd50e")
 		)
@@ -11412,7 +12384,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R7")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -11430,7 +12402,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c689e3ff-4501-44cb-af4e-791ceb89d8cc")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR04"
 			(at 50.8 236.22 0)
 			(hide yes)
 			(show_name no)
@@ -11490,7 +12462,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR034")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -11508,7 +12480,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7bd4ca1-3869-465d-8308-539c9c359ced")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR015"
 			(at 114.3 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -11568,7 +12540,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR08")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -11586,7 +12558,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7dfcf1d-f258-406c-b9b1-d08feee7437d")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR031"
 			(at 381 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -11646,7 +12618,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR026")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -11664,7 +12636,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cac0f61d-536f-430c-b55f-b22128804d22")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR030"
 			(at 368.3 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -11724,7 +12696,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR037")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -11742,7 +12714,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cc9bc5ea-b3c1-4cb6-8e73-1245c17b5b42")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR026"
 			(at 342.9 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -11802,7 +12774,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR019")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -11820,7 +12792,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf14be91-2f33-4c7b-9d89-cbf84b3eb266")
-		(property "Reference" "R1"
+		(property "Reference" "R2"
 			(at 114.3 68.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11831,7 +12803,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100 5%"
 			(at 114.3 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11842,7 +12814,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 112.776 70.104 90)
 			(hide yes)
 			(show_name no)
@@ -11853,7 +12825,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCA.pdf"
 			(at 111.76 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -11875,6 +12847,17 @@
 				)
 			)
 		)
+		(property "Part Number" "RMCA0603JT100R-HP"
+			(at 111.76 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "91151850-d089-46ce-82d0-891beaa5fe21")
 		)
@@ -11884,7 +12867,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -11912,7 +12895,7 @@
 				)
 			)
 		)
-		(property "Value" "10k C"
+		(property "Value" "10k A"
 			(at 121.92 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11922,7 +12905,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Runtron_RM-065_Vertical"
 			(at 121.92 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -11933,7 +12916,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.piher.net/wp-content/uploads/PIHER_PT-6.pdf"
 			(at 121.92 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -11988,6 +12971,17 @@
 				)
 			)
 		)
+		(property "Part Number" "PT6KV-103A2020"
+			(at 121.92 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6ea89c0b-5272-4bac-950a-c34e57ec5ee6")
 		)
@@ -12017,7 +13011,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d18da3a6-dcd5-4112-9031-47efd683deb2")
-		(property "Reference" "R10"
+		(property "Reference" "R11"
 			(at 162.56 138.176 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12027,7 +13021,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1k 1%"
 			(at 169.926 138.176 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12037,7 +13031,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 166.624 138.684 90)
 			(hide yes)
 			(show_name no)
@@ -12048,7 +13042,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20132/rca-sre3.pdf"
 			(at 166.37 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -12070,6 +13064,17 @@
 				)
 			)
 		)
+		(property "Part Number" "RCA06031K00FKEASR"
+			(at 166.37 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0de3cab7-591e-4f9f-a566-55f96ef2ebbf")
 		)
@@ -12079,7 +13084,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R10")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -12097,7 +13102,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d29c44ef-0bd6-4e30-9f5d-7e870ee6e799")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR016"
 			(at 133.35 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -12157,7 +13162,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR09")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -12185,7 +13190,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u"
+		(property "Value" "47u 35V 20%"
 			(at 112.522 83.312 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12196,7 +13201,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 			(at 111.76 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -12207,7 +13212,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
 			(at 111.76 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -12219,6 +13224,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 111.76 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "CGA9N1X7R1V476M230KC"
 			(at 111.76 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -12309,6 +13325,17 @@
 				)
 			)
 		)
+		(property "Part Number" "OPA1664AIDR"
+			(at 242.57 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "13"
 			(uuid "76430b35-5828-489f-b4d2-12f7df0bcd8d")
 		)
@@ -12356,6 +13383,86 @@
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
 					(reference "U1")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 361.95 226.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dbb6eb23-135f-48d5-8b04-fda10c08850f")
+		(property "Reference" "H2"
+			(at 364.49 224.7899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 364.49 226.0599 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad"
+			(at 361.95 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 361.95 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 361.95 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "33e6b825-ccca-4784-a800-cf3e725d6fa4")
+		)
+		(instances
+			(project "AL_Ternate Buffer"
+				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
+					(reference "H2")
+					(unit 1)
 				)
 			)
 		)
@@ -12460,7 +13567,7 @@
 				)
 			)
 		)
-		(property "Value" "10k C"
+		(property "Value" "10k A"
 			(at 123.19 146.05 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12470,7 +13577,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Runtron_RM-065_Vertical"
 			(at 123.19 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -12481,7 +13588,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.piher.net/wp-content/uploads/PIHER_PT-6.pdf"
 			(at 123.19 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -12536,6 +13643,17 @@
 				)
 			)
 		)
+		(property "Part Number" "PT6KV-103A2020"
+			(at 123.19 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4665e284-3bd7-49f1-a1b5-39c8d38c1059")
 		)
@@ -12565,8 +13683,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "df0da530-142d-4393-a9ad-f79f3895db0c")
-		(property "Reference" "R21"
-			(at 237.49 81.026 90)
+		(property "Reference" "R22"
+			(at 237.49 80.518 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12575,8 +13693,8 @@
 				)
 			)
 		)
-		(property "Value" "10k"
-			(at 244.856 81.026 90)
+		(property "Value" "10k 0.5%"
+			(at 244.856 80.518 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12585,7 +13703,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 241.554 81.534 90)
 			(hide yes)
 			(show_name no)
@@ -12596,7 +13714,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 241.3 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -12618,6 +13736,17 @@
 				)
 			)
 		)
+		(property "Part Number" "CRCW060310K0DKEAHP"
+			(at 241.3 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ee759703-e073-4c44-8478-eb5aff1d37d3")
 		)
@@ -12627,7 +13756,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R21")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -12645,7 +13774,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5bf3105-3864-4d19-b51c-5c43f04b73d8")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR011"
 			(at 111.76 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -12705,89 +13834,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 266.7 101.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f0d4e5e6-eae5-4ffe-80e1-8061e727cdc7")
-		(property "Reference" "R23"
-			(at 269.24 100.3299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 269.24 102.8699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 267.716 101.854 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 266.7 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 266.7 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "c168a83f-b51d-4f09-8f7a-4651e0d8f729")
-		)
-		(pin "1"
-			(uuid "057170f5-4b9c-4639-98e0-96b853ddf63a")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R23")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -12795,17 +13842,17 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 196.85 247.65 0)
+		(at 198.12 247.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "f13550bd-2456-4664-9ca3-9b51fb115ea7")
 		(property "Reference" "C12"
-			(at 197.866 245.364 0)
+			(at 199.136 245.364 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12815,8 +13862,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100u"
-			(at 197.612 249.682 0)
+		(property "Value" "100n 100V 10%"
+			(at 198.882 249.682 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12826,8 +13873,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 196.85 247.65 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 198.12 247.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12837,8 +13884,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 196.85 247.65 0)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM2165C1H101JA16-01.pdf"
+			(at 198.12 247.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12849,7 +13896,18 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 196.85 247.65 0)
+			(at 198.12 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "GCJ21BR72A104KA01L"
+			(at 198.12 247.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12875,8 +13933,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 349.25 226.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f31f7bdd-b4ae-4273-ba74-e83bfa4a9c0d")
+		(property "Reference" "H1"
+			(at 351.79 224.7899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 351.79 226.0599 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad"
+			(at 349.25 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 349.25 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 349.25 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a1e2ac1d-df2e-4d3a-a6c9-6e0096b0aadd")
+		)
+		(instances
+			(project "AL_Ternate Buffer"
+				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:OPA1664D")
-		(at 210.82 247.65 0)
+		(at 218.44 247.65 0)
 		(unit 5)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12887,7 +14025,7 @@
 		(fields_autoplaced yes)
 		(uuid "f35f228e-bb1a-471e-b9f8-701c3dffad41")
 		(property "Reference" "U1"
-			(at 209.55 246.3799 0)
+			(at 217.17 246.3799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12898,7 +14036,7 @@
 			)
 		)
 		(property "Value" "OPA1664AIDR"
-			(at 209.55 248.9199 0)
+			(at 217.17 248.9199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12909,7 +14047,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 209.55 245.11 0)
+			(at 217.17 245.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12920,7 +14058,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa1664.pdf"
-			(at 212.09 242.57 0)
+			(at 219.71 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12931,7 +14069,18 @@
 			)
 		)
 		(property "Description" "Quad Low-Power, Low-Noise, Low-Distortion, Bipolar-Input SoundPlus Audio Operational Amplifiers, SOIC-14"
-			(at 210.82 247.65 0)
+			(at 218.44 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "OPA1664AIDR"
+			(at 218.44 247.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13004,7 +14153,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f56a1471-ccb2-4154-96d4-091f634998d8")
-		(property "Reference" "R15"
+		(property "Reference" "R16"
 			(at 224.79 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13015,7 +14164,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 0.5%"
 			(at 224.79 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13026,7 +14175,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 223.266 58.674 90)
 			(hide yes)
 			(show_name no)
@@ -13037,7 +14186,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 222.25 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -13059,6 +14208,17 @@
 				)
 			)
 		)
+		(property "Part Number" "CRCW060310K0DKEAHP"
+			(at 222.25 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c8f00095-fe7d-4c60-b396-4a5ef0c22778")
 		)
@@ -13068,7 +14228,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R15")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -13086,7 +14246,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f69f4eaa-bfae-4b61-86a0-91536804645f")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR09"
 			(at 83.82 279.4 0)
 			(hide yes)
 			(show_name no)
@@ -13146,7 +14306,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR035")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -13162,10 +14322,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f8a978c0-25d4-4f9d-a697-307e48cc1bc7")
 		(property "Reference" "C16"
-			(at 212.0963 177.8 90)
+			(at 212.09 176.784 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13174,8 +14333,8 @@
 				)
 			)
 		)
-		(property "Value" "10u"
-			(at 212.0963 180.34 90)
+		(property "Value" "10u 25V 10%"
+			(at 212.09 179.324 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13184,7 +14343,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 212.09 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -13195,7 +14354,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT21BC71E106KE13-01.pdf"
 			(at 212.09 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -13208,6 +14367,17 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 212.09 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" "GRT21BC71E106KE13L"
+			(at 212.09 184.15 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13244,7 +14414,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa3872ac-6c7c-4e3a-a68c-dcb059478aa4")
-		(property "Reference" "R25"
+		(property "Reference" "R1"
 			(at 86.36 266.6999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13266,7 +14436,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 84.836 268.224 90)
 			(hide yes)
 			(show_name no)
@@ -13277,7 +14447,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/560112116101/22230395"
 			(at 83.82 267.97 0)
 			(hide yes)
 			(show_name no)
@@ -13299,6 +14469,17 @@
 				)
 			)
 		)
+		(property "Part Number" "560112116101"
+			(at 83.82 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ab915c69-53bd-499d-80b6-9b33d7538be1")
 		)
@@ -13308,7 +14489,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "R25")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -13326,7 +14507,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe522cb3-0be8-4f65-a073-1564710c3d08")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR012"
 			(at 113.03 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -13386,7 +14567,7 @@
 		(instances
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR05")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
