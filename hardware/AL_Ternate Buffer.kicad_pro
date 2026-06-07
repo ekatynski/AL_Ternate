@@ -528,7 +528,7 @@
       "specctra_dsn": "",
       "vrml": ""
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "kicad-embed://Adequate_Labs_Template.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -684,7 +684,7 @@
         "uuid": "741edc8a-7170-4d57-9b3b-12f5860c24f7"
       }
     ],
-    "used_designators": "U1,SW1,RV1-2,J1-5,#FLG1-4,#PWR1-32,#PWR39,BT1,H1-4,R1-27,D1-3,C1-19",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

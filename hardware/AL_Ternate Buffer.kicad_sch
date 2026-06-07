@@ -9612,6 +9612,7 @@
 	(symbol
 		(lib_id "Amplifier_Operational:OPA1664D")
 		(at 241.3 96.52 0)
+		(mirror x)
 		(unit 4)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9619,10 +9620,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "73da4f8c-dd62-47e4-872d-e7d6ad8871ec")
 		(property "Reference" "U1"
-			(at 241.3 86.36 0)
+			(at 241.3 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9632,7 +9632,7 @@
 			)
 		)
 		(property "Value" "OPA1664AIDR"
-			(at 241.3 88.9 0)
+			(at 241.3 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9642,7 +9642,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 240.03 93.98 0)
+			(at 240.03 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9653,7 +9653,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa1664.pdf"
-			(at 242.57 91.44 0)
+			(at 242.57 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9749,7 +9749,7 @@
 		(dnp no)
 		(uuid "74f047d6-39a0-4d54-90f7-ec4c43d73b48")
 		(property "Reference" "U1"
-			(at 184.15 42.926 0)
+			(at 184.404 63.754 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9759,7 +9759,7 @@
 			)
 		)
 		(property "Value" "OPA1664AIDR"
-			(at 184.15 45.212 0)
+			(at 184.15 61.214 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11439,6 +11439,7 @@
 	(symbol
 		(lib_id "Amplifier_Operational:OPA1664D")
 		(at 185.42 154.94 0)
+		(mirror x)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11446,10 +11447,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a7e9d054-fb45-48a0-ba14-1286f5c80b24")
 		(property "Reference" "U1"
-			(at 185.42 144.78 0)
+			(at 185.42 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11459,7 +11459,7 @@
 			)
 		)
 		(property "Value" "OPA1664AIDR"
-			(at 185.42 147.32 0)
+			(at 185.42 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11469,7 +11469,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 184.15 152.4 0)
+			(at 184.15 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11480,7 +11480,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa1664.pdf"
-			(at 186.69 149.86 0)
+			(at 186.69 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13263,6 +13263,7 @@
 	(symbol
 		(lib_id "Amplifier_Operational:OPA1664D")
 		(at 242.57 198.12 0)
+		(mirror x)
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13270,10 +13271,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d92860b3-96e8-47a1-8f96-9f472f98e876")
 		(property "Reference" "U1"
-			(at 242.57 187.96 0)
+			(at 242.57 208.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13283,7 +13283,7 @@
 			)
 		)
 		(property "Value" "OPA1664AIDR"
-			(at 242.57 190.5 0)
+			(at 242.57 205.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13293,7 +13293,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 241.3 195.58 0)
+			(at 241.3 200.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13304,7 +13304,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa1664.pdf"
-			(at 243.84 193.04 0)
+			(at 243.84 203.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
