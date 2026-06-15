@@ -2221,129 +2221,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "H"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole_Pad"
-				(at 0 4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Mounting Hole with connection"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*Pad*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "MountingHole_Pad_0_1"
-				(circle
-					(center 0 1.27)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "MountingHole_Pad_1_1"
-				(pin input line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Switch:SW_SPDT"
 			(pin_names
 				(offset 0)
@@ -3284,12 +3161,6 @@
 		(uuid "0ecd2447-2d2f-4302-ba43-c2faf9b3181a")
 	)
 	(junction
-		(at 387.35 234.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "15ff0c56-b204-4878-a1bd-c61fca007c1c")
-	)
-	(junction
 		(at 134.62 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3336,12 +3207,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "43a253ff-eb00-4cca-9f02-3b5d6fa991fb")
-	)
-	(junction
-		(at 361.95 234.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5544a709-8bc1-4679-b71a-652667a6d0b3")
 	)
 	(junction
 		(at 172.72 38.1)
@@ -3560,12 +3425,6 @@
 		(uuid "f7509aab-6531-4ece-aabe-fceb30ec8284")
 	)
 	(junction
-		(at 374.65 234.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fcdccc0a-8604-4017-9fa6-2af793b2e4be")
-	)
-	(junction
 		(at 58.42 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3630,16 +3489,6 @@
 			(type default)
 		)
 		(uuid "0573df63-85e1-4fc3-87f1-bc5ac06f3f16")
-	)
-	(wire
-		(pts
-			(xy 387.35 234.95) (xy 387.35 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "066a9097-61d3-4459-90db-15920c2d58ef")
 	)
 	(wire
 		(pts
@@ -3793,16 +3642,6 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 234.95) (xy 361.95 234.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21273f43-8856-4cae-aee8-eb3a099d79ee")
-	)
-	(wire
-		(pts
 			(xy 368.3 90.17) (xy 368.3 92.71)
 		)
 		(stroke
@@ -3900,16 +3739,6 @@
 			(type default)
 		)
 		(uuid "2c18ed24-5f60-4fa7-9ec7-9100b3eb426b")
-	)
-	(wire
-		(pts
-			(xy 361.95 234.95) (xy 374.65 234.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d785cdd-a984-4938-aa67-12689d33ecd4")
 	)
 	(wire
 		(pts
@@ -4250,16 +4079,6 @@
 			(type default)
 		)
 		(uuid "4c906263-60da-4589-8b62-65e220b52ad7")
-	)
-	(wire
-		(pts
-			(xy 387.35 234.95) (xy 387.35 236.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4cb52fc8-d3d4-4fc1-8cb7-0a34f30e8cd8")
 	)
 	(wire
 		(pts
@@ -4753,16 +4572,6 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 234.95) (xy 349.25 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c4ef4a1-e9ed-4a96-a881-b64a324a3067")
-	)
-	(wire
-		(pts
 			(xy 80.01 55.88) (xy 149.86 55.88)
 		)
 		(stroke
@@ -4790,16 +4599,6 @@
 			(type default)
 		)
 		(uuid "a54beb16-0a92-4c65-a472-3bf28a387c8f")
-	)
-	(wire
-		(pts
-			(xy 374.65 234.95) (xy 387.35 234.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a56f2431-58aa-4faa-9b91-737a8824c790")
 	)
 	(wire
 		(pts
@@ -5263,16 +5062,6 @@
 	)
 	(wire
 		(pts
-			(xy 361.95 234.95) (xy 361.95 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d44b9b11-59e2-442c-98b4-7c90969738b4")
-	)
-	(wire
-		(pts
 			(xy 175.26 163.83) (xy 175.26 167.64)
 		)
 		(stroke
@@ -5360,16 +5149,6 @@
 			(type default)
 		)
 		(uuid "e328bcba-2e52-42fc-8ced-a24292d94096")
-	)
-	(wire
-		(pts
-			(xy 374.65 234.95) (xy 374.65 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e36c44cd-1a8d-4022-b841-ae5dc637a57c")
 	)
 	(wire
 		(pts
@@ -7314,86 +7093,6 @@
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 374.65 226.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "267fe83b-3213-4ef3-8f62-76052a46a897")
-		(property "Reference" "H3"
-			(at 377.19 224.7899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 377.19 226.0599 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad"
-			(at 374.65 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 374.65 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 374.65 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8b44f3ae-180d-4ae1-a4b0-523e2f0f0d18")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -10471,86 +10170,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 387.35 226.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d4fd4cf-4c47-45bc-9ca8-3d920fa1f2da")
-		(property "Reference" "H4"
-			(at 389.89 224.7899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 389.89 226.0599 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad"
-			(at 387.35 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 387.35 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 387.35 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b66507fc-0af7-4acc-b339-371ca979102d")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 152.4 38.1 90)
 		(unit 1)
@@ -11353,84 +10972,6 @@
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
 					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 387.35 236.22 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a4137886-9d07-47c9-bf03-9d815934d462")
-		(property "Reference" "#PWR032"
-			(at 387.35 242.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 387.35 241.3 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 387.35 236.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 387.35 236.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 387.35 236.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "94e2711f-1ced-45be-9ae8-16e91efd2894")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -13388,86 +12929,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 361.95 226.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dbb6eb23-135f-48d5-8b04-fda10c08850f")
-		(property "Reference" "H2"
-			(at 364.49 224.7899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 364.49 226.0599 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad"
-			(at 361.95 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 361.95 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 361.95 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "33e6b825-ccca-4784-a800-cf3e725d6fa4")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 368.3 25.4 0)
 		(mirror x)
@@ -13927,86 +13388,6 @@
 			(project "AL_Ternate Buffer"
 				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
 					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 349.25 226.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f31f7bdd-b4ae-4273-ba74-e83bfa4a9c0d")
-		(property "Reference" "H1"
-			(at 351.79 224.7899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 351.79 226.0599 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad"
-			(at 349.25 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 349.25 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 349.25 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a1e2ac1d-df2e-4d3a-a6c9-6e0096b0aadd")
-		)
-		(instances
-			(project "AL_Ternate Buffer"
-				(path "/741edc8a-7170-4d57-9b3b-12f5860c24f7"
-					(reference "H1")
 					(unit 1)
 				)
 			)
